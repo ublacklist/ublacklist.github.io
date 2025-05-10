@@ -1,19 +1,8 @@
 {
+  "extends": "@docusaurus/tsconfig",
+  "exclude": [".docusaurus", "build"],
   "compilerOptions": {
-    "allowImportingTsExtensions": true,
-    "allowJs": true,
     "exactOptionalPropertyTypes": true,
-    "jsx": "react-jsx",
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "noEmit": true,
-    "paths": {
-      "@builtin/*": ["./builtin/*"]
-    },
-    "skipLibCheck": true,
     "strict": true,
-    "target": "ESNext",
-    "verbatimModuleSyntax": true
-  },
-  "exclude": ["dist", "website"]
+  }
 }

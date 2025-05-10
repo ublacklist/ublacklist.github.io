@@ -1,60 +1,50 @@
 name: Deploy
-
-permissions:
-  contents: write
-  issues: write
-  pull-requests: write
-
 on:
-  workflow_dispatch:
-    inputs:
-      chrome:
-        type: boolean
-        default: true
-        description: Chrome
-      firefox:
-        type: boolean
-        default: true
-        description: Firefox
-
+  push:
+    branches:
+      - main
+  workflow_dispatch: {}
+permissions: {}
+defaults:
+  run:
+    shell: bash
 jobs:
-  deploy:
-    name: Deploy
-    runs-on: ubuntu-22.04
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-        with:
-          submodules: true
 
       - name: Setup pnpm
-        uses: ./.github/actions/setup-pnpm
+        uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 20
+          cache: pnpm
 
       - name: Build
-        run: |
-          pnpm build
-          pnpm build --browser firefox
-        env:
-          DROPBOX_API_KEY: ${{ secrets.DROPBOX_API_KEY }}
-          DROPBOX_API_SECRET: ${{ secrets.DROPBOX_API_SECRET }}
-          GOOGLE_DRIVE_API_KEY: ${{ secrets.GOOGLE_DRIVE_API_KEY }}
-          GOOGLE_DRIVE_API_SECRET: ${{ secrets.GOOGLE_DRIVE_API_SECRET }}
+        run: pnpm build
 
+      - name: Upload
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
+        with:
+          path: build/
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    needs: build
+    steps:
       - name: Deploy
-        run: pnpm semantic-release
-        env:
-          # Chrome
-          DEPLOY_CHROME: ${{ inputs.chrome }}
-          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
-          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
-          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
-          # Firefox
-          DEPLOY_FIREFOX: ${{ inputs.firefox }}
-          AMO_API_KEY: ${{ secrets.AMO_API_KEY }}
-          AMO_API_SECRET: ${{ secrets.AMO_API_SECRET }}
-          DROPBOX_API_KEY: ${{ secrets.DROPBOX_API_KEY }}
-          DROPBOX_API_SECRET: ${{ secrets.DROPBOX_API_SECRET }}
-          GOOGLE_DRIVE_API_KEY: ${{ secrets.GOOGLE_DRIVE_API_KEY }}
-          GOOGLE_DRIVE_API_SECRET: ${{ secrets.GOOGLE_DRIVE_API_SECRET }}
-          # GitHub
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}

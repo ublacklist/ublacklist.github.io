@@ -1,12 +1,6 @@
-# dependencies
+# Dependency directories
 node_modules
 
-# production
-/dist
-/website/build
-
-# local env files
-.env.local
-
-# docusaurus
+# Docusaurus cache and generated files
 .docusaurus
+build
