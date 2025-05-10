@@ -54,11 +54,5 @@
     "fix:biome": "biome check --write",
     "fix:prettier": "prettier --write ."
   },
-  "packageManager": "pnpm@10.10.0",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@biomejs/biome",
-      "lefthook"
-    ]
-  }
+  "packageManager": "pnpm@10.10.0"
 }
