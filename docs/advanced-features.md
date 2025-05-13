@@ -286,6 +286,18 @@ It is a good idea to host your subscription on GitHub. Make sure that you publis
 
 #### Subscription links {#subscription-links}
 
+:::note
+
+This feature is available in v8.11.0 or later. Users need to explicitly enable this feature by turning on "Enable ruleset subscription links" in the extension's options page.
+
+:::
+
+:::note
+
+This feature does not work in Safari at the moment.
+
+:::
+
 For easier sharing of your subscription, you can create a subscription link in the following format:
 
 ```
@@ -305,9 +317,3 @@ Your subscription link would be:
 ```
 https://ublacklist.github.io/rulesets/subscribe?url=https%3A%2F%2Fraw.githubusercontent.com%2Fusername%2Frepository%2Fmaster%2Fublacklist.txt
 ```
-
-:::note
-
-This feature is available in v8.11.0 or later. Users need to explicitly enable this feature by turning on "Enable ruleset subscription links" in the extension's options page.
-
-:::
