@@ -2,6 +2,12 @@
 title: 購読リスト
 ---
 
+:::warning[免責事項]
+
+このページに掲載されているルールセットは、ユーザー生成コンテンツであり、uBlacklist プロジェクトによって承認、管理、または検証されたものではありません。これらのリストは、個々の寄稿者が独自のレビューと評価に基づいて作成および維持しています。そのため、それぞれの著者の意見と判断を反映しています。プロジェクト自体は中立を保ち、これらのリストを共有するためのプラットフォームを提供するだけです。これらのルールセットを適用する際は、ユーザー自身の裁量で行ってください。特定のルールセットに関して問題や懸念がある場合は、そのルールセットの作成者に直接報告してください。
+
+:::
+
 # 購読リスト
 
 [このページに購読を追加する](https://github.com/ublacklist/website/edit/main/i18n/ja/docusaurus-plugin-content-pages/subscriptions.md)
@@ -24,6 +30,21 @@ title: 購読リスト
 - [uBlock-Origin-dev-filter](https://github.com/quenhus/uBlock-Origin-dev-filter) by [quenhus](https://github.com/quenhus)
   - "Filters to block and remove copycat-websites from DuckDuckGo, Google and other search engines. Used to be specific to dev websites like StackOverflow or GitHub, but it currently supports others like Wikipedia."
 
+## メディアサイト {#media-sites}
+
+- [Axel Springer SE blacklist](https://github.com/RubenKelevra/ublacklist_springer) by [RubenKelevra](https://github.com/RubenKelevra)
+  - "Hides all Axel Springer SE media outlets, including mentiones/topics on other sides"
+- [Conspiracy Media blacklist](https://github.com/RubenKelevra/ublacklist_conspiracy) by [RubenKelevra](https://github.com/RubenKelevra)
+  - "Hides (most) conspiracy media outlets"
+- [Fake-News Media blacklist](https://github.com/RubenKelevra/ublacklist_fakenews) by [RubenKelevra](https://github.com/RubenKelevra)
+  - "Hides (most) fake news media outlets"
+- [Leftwing Media blacklist](https://github.com/RubenKelevra/ublacklist_leftwing_media) by [RubenKelevra](https://github.com/RubenKelevra)
+  - "Hides (most) leftwing media outlets"
+- [Rightwing Media blacklist](https://github.com/RubenKelevra/ublacklist_rightwing_media) by [RubenKelevra](https://github.com/RubenKelevra)
+  - "Hides (most) rightwing media outlets"
+- [Israeli News Blocklist](https://github.com/punpunie/ilNewsBlocklist) by [bun](https://github.com/punpunie)
+  - "blocklist of english-speaking israeli news websites"
+
 ## 特定のサイト {#specific-sites}
 
 - [ublacklist-pinterest](https://github.com/rjaus/ublacklist-pinterest) by [Riley James](https://github.com/rjaus)
@@ -41,6 +62,11 @@ title: 購読リスト
   - "Ad and tracking server domain list maintained since 2001."
   - "Doesn’t have a dedicated uBlacklist/match patterns format, but use of the [`prepend`](https://pgl.yoyo.org/as/formats.php#prepend) and [`append`](https://pgl.yoyo.org/as/formats.php#append) parameters produce a URL that works perfectly for uBlacklist:
     - "`https://pgl.yoyo.org/as/serverlist.php?hostformat=plain&mimetype=plaintext&prepend=*://*.&append=/*&showintro=0`"
+
+## ゲーム {#gaming}
+
+- [Safebrowsing for Minecrafters 🛡️⛏️](https://codeberg.org/legendary_creeper/safebrowsing-for-minecrafters) by [Legendary Creeper](https://craftodon.social/@legendary_creeper)
+  - "This filterlist was crafted to help users and creators in avoiding malicious Minecraft-related websites, including, but not limited to, those distributing malicious and illegal copies of the game or Mods, repost sites which monetize stolen content from creators, and sites impersonating trusted websites like Minecraft.net, CurseForge, or Mcpedl.com."
 
 ## 中国語 {#chinese}
 
@@ -81,7 +107,9 @@ title: 購読リスト
 - [uBlacklist-filter-by-kdroidwin](https://github.com/Kdroidwin/uBlacklist-filter-by-kdroidwin) by [@Kdroidwin](https://github.com/Kdroidwin)
   - "詐欺サイトや偽サイトやいかがでしたかサイトなどを検索結果から除外"
 
-## ほかの購読リスト {#other-subscription-lists}
+## その他の購読リスト {#other-subscription-lists}
 
 - [awesome-ublacklist](https://github.com/rjaus/awesome-ublacklist) by [Riley James](https://github.com/rjaus)
   - "Awesome list of uBlacklist subscriptions to block search results from google, bing, duckduckgo."
+- [Nicoles uBlacklist collection](https://github.com/nicoleahmed/nicoles-ublacklist/) by [Nicole Ahmed](https://github.com/nicoleahmed)
+  - "A collection of uBlacklist subscriptions in various languages and for multiple purposes. Additionally a small personal blacklist for sites missed by other lists (particularly UK related sites)."
