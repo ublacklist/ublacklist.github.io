@@ -1,11 +1,11 @@
 ---
-title: SERPINFO (experimental)
+title: SERPINFO
 sidebar_position: 3
 ---
 
-:::warning
+:::note
 
-SERPINFO is an experimental feature introduced in v8.11.0 for Chrome and Firefox. It can be manually enabled in the extension's options page.
+SERPINFO was introduced in v8.11.0 for Chrome and Firefox as an experimental feature and has been enabled by default starting from v9.
 
 :::
 
@@ -38,42 +38,42 @@ pages:
 
 ## Top-Level Properties {#top-level-properties}
 
-| Property       | Type   | Description                          | Required |
-| -------------- | ------ | ------------------------------------ | -------- |
-| `name`         | string | Name of the search engine            | Required |
-| `version`      | string | Version of the definition file       | Optional |
-| `description`  | string | Description of the definition file   | Optional |
-| `homepage`     | string | Homepage URL of the definition       | Optional |
-| `lastModified` | string | Last modification date in ISO format | Optional |
-| `pages`        | array  | Array of page definitions            | Required |
+| Property       | Type   | Description                          | Required     |
+| -------------- | ------ | ------------------------------------ | ------------ |
+| `name`         | string | Name of the definition file          | **Required** |
+| `version`      | string | Version of the definition file       | Optional     |
+| `description`  | string | Description of the definition file   | Optional     |
+| `homepage`     | string | Homepage URL of the definition       | Optional     |
+| `lastModified` | string | Last modification time in ISO format | Optional     |
+| `pages`        | array  | Array of page definitions            | **Required** |
 
 ## Page Definition {#page-definition}
 
 Each page in the `pages` array represents a specific type of search result page (Web, Images, News, etc.):
 
-| Property         | Type              | Description                                                               | Required |
-| ---------------- | ----------------- | ------------------------------------------------------------------------- | -------- |
-| `name`           | string            | Name of the page type                                                     | Required |
-| `matches`        | array             | Array of match patterns to include pages                                  | Required |
-| `excludeMatches` | array             | Array of match patterns to exclude pages                                  | Optional |
-| `includeRegex`   | string            | Regular expression pattern to include pages                               | Optional |
-| `excludeRegex`   | string            | Regular expression pattern to exclude pages                               | Optional |
-| `userAgent`      | string            | Can be "any", "desktop", or "mobile"                                      | Optional |
-| `results`        | array             | Array of result extractors                                                | Required |
-| `commonProps`    | object            | Common properties applied to all results on this page                     | Optional |
-| `delay`          | number \| boolean | Delay in milliseconds after page load, or boolean to enable/disable delay | Optional |
+| Property         | Type              | Description                                                               | Required     |
+| ---------------- | ----------------- | ------------------------------------------------------------------------- | ------------ |
+| `name`           | string            | Name of the page type                                                     | **Required** |
+| `matches`        | array             | Array of match patterns to include pages                                  | **Required** |
+| `excludeMatches` | array             | Array of match patterns to exclude pages                                  | Optional     |
+| `includeRegex`   | string            | Regular expression pattern to include pages                               | Optional     |
+| `excludeRegex`   | string            | Regular expression pattern to exclude pages                               | Optional     |
+| `userAgent`      | string            | Can be "any", "desktop", or "mobile"                                      | Optional     |
+| `results`        | array             | Array of result extractors                                                | **Required** |
+| `commonProps`    | object            | Common properties applied to all results on this page                     | Optional     |
+| `delay`          | number \| boolean | Delay in milliseconds after page load, or boolean to enable/disable delay | Optional     |
 
 ## Result Extractor {#result-extractor}
 
 Each item in the `results` array defines how to extract data from a single search result:
 
-| Property        | Type            | Description                                                                                   | Required |
-| --------------- | --------------- | --------------------------------------------------------------------------------------------- | -------- |
-| `root`          | string \| array | Root command to locate result elements                                                        | Required |
-| `url`           | string \| array | Property command to extract the URL from the result                                           | Required |
-| `props`         | object          | Key-value pairs where keys are property names and values are property commands for extraction | Optional |
-| `button`        | array           | Button command to add block buttons to results                                                | Optional |
-| `preserveSpace` | boolean         | Determines whether to retain the layout space of blocked results, preventing layout shifts    | Optional |
+| Property        | Type            | Description                                                                                   | Required     |
+| --------------- | --------------- | --------------------------------------------------------------------------------------------- | ------------ |
+| `root`          | string \| array | Root command to locate result elements                                                        | **Required** |
+| `url`           | string \| array | Property command to extract the URL from the result                                           | **Required** |
+| `props`         | object          | Key-value pairs where keys are property names and values are property commands for extraction | Optional     |
+| `button`        | array           | Button command to add block buttons to results                                                | Optional     |
+| `preserveSpace` | boolean         | Determines whether to retain the layout space of blocked results, preventing layout shifts    | Optional     |
 
 ## Commands {#commands}
 
@@ -174,5 +174,11 @@ To subscribe to a SERPINFO definition:
 :::note
 
 To use subscription links, you need to enable them manually. Go to the extension's options page and turn on "Enable SERPINFO subscription links".
+
+:::
+
+:::note
+
+Subscription links do not work in Safari at the moment.
 
 :::
