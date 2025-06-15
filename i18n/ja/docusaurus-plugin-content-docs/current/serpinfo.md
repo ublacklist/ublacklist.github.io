@@ -19,7 +19,6 @@ SERPINFO ファイルは以下の構造を持つ YAML 形式を使用します:
 name: SearchEngineName
 version: 1.0.0
 homepage: https://example.com/
-license: MIT
 lastModified: 2023-09-01T00:00:00Z
 
 pages:
@@ -38,42 +37,43 @@ pages:
 
 ## トップレベルプロパティ {#top-level-properties}
 
-| プロパティ     | 型     | 説明                       | 必須     |
-| -------------- | ------ | -------------------------- | -------- |
-| `name`         | string | SERPINFO の名前            | **必須** |
-| `version`      | string | SERPINFO のバージョン      | 任意     |
-| `description`  | string | SERPINFO の説明            | 任意     |
-| `homepage`     | string | SERPINFO のホームページURL | 任意     |
-| `lastModified` | string | ISO 形式での最終更新日時   | 任意     |
-| `pages`        | array  | ページ定義の配列           | **必須** |
+| 必須 | プロパティ     | 型     | 説明                       |
+| :--: | -------------- | ------ | -------------------------- |
+|  ✓   | `name`         | string | SERPINFO の名前            |
+|  ✓   | `pages`        | array  | ページ定義の配列           |
+|      | `version`      | string | SERPINFO のバージョン      |
+|      | `description`  | string | SERPINFO の説明            |
+|      | `homepage`     | string | SERPINFO のホームページURL |
+|      | `lastModified` | string | ISO 形式での最終更新日時   |
 
 ## ページ定義 {#page-definition}
 
-`pages` 配列内の各ページは、特定の種類の検索結果ページ (Web、画像、ニュースなど) を表します:
+`pages` 配列内の各項目は、特定の種類の検索結果ページ (Web、画像、ニュースなど) を表します:
 
-| プロパティ       | 型                | 説明                                                            | 必須     |
-| ---------------- | ----------------- | --------------------------------------------------------------- | -------- |
-| `name`           | string            | ページタイプの名前                                              | **必須** |
-| `matches`        | array             | ページを含めるためのマッチパターンの配列                        | **必須** |
-| `excludeMatches` | array             | ページを除外するためのマッチパターンの配列                      | 任意     |
-| `includeRegex`   | string            | ページを含めるための正規表現パターン                            | 任意     |
-| `excludeRegex`   | string            | ページを除外するための正規表現パターン                          | 任意     |
-| `userAgent`      | string            | "any"、"desktop"、または "mobile" を指定可能                    | 任意     |
-| `results`        | array             | 検索結果定義の配列                                              | **必須** |
-| `commonProps`    | object            | このページのすべての結果に適用される共通プロパティ              | 任意     |
-| `delay`          | number \| boolean | ページ読み込み後の遅延時間 (ミリ秒) または遅延の有効/無効を指定 | 任意     |
+| 必須 | プロパティ       | 型                | 説明                                                            |
+| :--: | ---------------- | ----------------- | --------------------------------------------------------------- |
+|  ✓   | `name`           | string            | ページ定義の名前                                                |
+|  ✓   | `matches`        | array             | ページを含めるためのマッチパターンの配列                        |
+|  ✓   | `results`        | array             | 検索結果定義の配列                                              |
+|      | `excludeMatches` | array             | ページを除外するためのマッチパターンの配列                      |
+|      | `includeRegex`   | string            | ページを含めるための正規表現パターン                            |
+|      | `excludeRegex`   | string            | ページを除外するための正規表現パターン                          |
+|      | `userAgent`      | string            | "any"、"desktop"、または "mobile" を指定可能                    |
+|      | `commonProps`    | object            | このページのすべての結果に適用される共通プロパティ              |
+|      | `delay`          | number \| boolean | ページ読み込み後の遅延時間 (ミリ秒) または遅延の有効/無効を指定 |
 
-## 検索結果定義 {#result-extractor}
+## 検索結果定義 {#result-definition}
 
 `results` 配列内の各項目は、単一の検索結果からデータを抽出する方法を定義します:
 
-| プロパティ      | 型              | 説明                                                                         | 必須     |
-| --------------- | --------------- | ---------------------------------------------------------------------------- | -------- |
-| `root`          | string \| array | 検索結果要素を見つけるためのルートコマンド                                   | **必須** |
-| `url`           | string \| array | 検索結果から URL を抽出するためのプロパティコマンド                          | **必須** |
-| `props`         | object          | 抽出するプロパティ名とプロパティコマンドのキーと値のペア                     | 任意     |
-| `button`        | array           | 検索結果にブロックボタンを追加するためのボタンコマンド                       | 任意     |
-| `preserveSpace` | boolean         | ブロックされた検索結果のレイアウトスペースを保持し、レイアウトのシフトを防ぐ | 任意     |
+| 必須 | プロパティ      | 型              | 説明                                                                         |
+| :--: | --------------- | --------------- | ---------------------------------------------------------------------------- |
+|  ✓   | `root`          | string \| array | 検索結果要素を見つけるためのルートコマンド                                   |
+|  ✓   | `url`           | string \| array | 検索結果から URL を抽出するためのプロパティコマンド                          |
+|      | `name`          | string          | 検索結果定義の名前                                                           |
+|      | `props`         | object          | 抽出するプロパティ名とプロパティコマンドのキーと値のペア                     |
+|      | `button`        | array           | 検索結果にブロックボタンを追加するためのボタンコマンド                       |
+|      | `preserveSpace` | boolean         | ブロックされた検索結果のレイアウトスペースを保持し、レイアウトのシフトを防ぐ |
 
 ## コマンド {#commands}
 
