@@ -84,7 +84,17 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
 
   future: {
-    experimental_faster: true,
+    experimental_faster: {
+      swcJsLoader: true,
+      swcJsMinimizer: true,
+      swcHtmlMinimizer: true,
+      lightningCssMinimizer: true,
+      mdxCrossCompilerCache: true,
+      rspackBundler: true,
+      // Disable Rspack persistent cache for now
+      rspackPersistentCache: false,
+      ssgWorkerThreads: true,
+    },
     v4: true,
   },
 };
