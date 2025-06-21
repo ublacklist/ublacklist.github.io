@@ -14,9 +14,11 @@ const Callback: React.FC = () => (
           return params.code != null ? (
             <>
               <h1>
+                {/** biome-ignore lint/nursery/useUniqueElementIds: This is not a HTML id. */}
                 <Translate id="pages.callback.success.title" />
               </h1>
               <p>
+                {/** biome-ignore lint/nursery/useUniqueElementIds: This is not a HTML id. */}
                 <Translate id="pages.callback.success.copyCode" />
               </p>
               <CodeBlock>{params.code}</CodeBlock>
@@ -24,9 +26,11 @@ const Callback: React.FC = () => (
           ) : (
             <>
               <h1>
+                {/** biome-ignore lint/nursery/useUniqueElementIds: This is not a HTML id. */}
                 <Translate id="pages.callback.failure.title" />
               </h1>
               <p>
+                {/** biome-ignore lint/nursery/useUniqueElementIds: This is not a HTML id. */}
                 <Translate id="pages.callback.failure.checkError" />
               </p>
               <CodeBlock className="language-json">
