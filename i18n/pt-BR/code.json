@@ -1,0 +1,14 @@
+{
+  "pages.callback.success.title": {
+    "message": "Autenticação bem-sucedida"
+  },
+  "pages.callback.success.copyCode": {
+    "message": "Por favor copie o código de autorização abaixo e cole ele na página de opções."
+  },
+  "pages.callback.failure.title": {
+    "message": "Autenticação falha"
+  },
+  "pages.callback.failure.checkError": {
+    "message": "Verifique a mensagem de erro abaixo."
+  }
+}

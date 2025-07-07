@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "uBlacklist"
+  },
+  "item.label.docs": {
+    "message": "Documentação"
+  },
+  "item.label.subscriptions": {
+    "message": "Inscrições"
+  },
+  "item.label.privacyPolicy": {
+    "message": "Política de privacidade"
+  }
+}
