@@ -3,6 +3,7 @@
   "exclude": [".docusaurus", "build"],
   "compilerOptions": {
     "exactOptionalPropertyTypes": true,
+    "noUncheckedIndexedAccess": true,
     "strict": true
   }
 }
