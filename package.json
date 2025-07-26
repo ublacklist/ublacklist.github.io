@@ -38,14 +38,14 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.0.4",
+    "@biomejs/biome": "^2.1.2",
     "@docusaurus/module-type-aliases": "3.8.1",
     "@docusaurus/theme-classic": "3.8.1",
     "@docusaurus/tsconfig": "3.8.1",
     "@docusaurus/types": "3.8.1",
     "@types/react": "^19.1.8",
-    "lefthook": "^1.11.13",
-    "prettier": "^3.5.3",
+    "lefthook": "^1.12.2",
+    "prettier": "^3.6.2",
     "typescript": "^5.8.3"
   },
   "packageManager": "pnpm@10.10.0",
