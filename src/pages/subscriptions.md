@@ -2,15 +2,13 @@
 title: Subscriptions
 ---
 
-:::warning[Disclaimer]
+# Subscriptions
+
+:::warning
 
 The blacklists featured on this page are user-generated content and are not endorsed, controlled, or verified by the uBlacklist project. These lists are created and maintained by individual contributors based on independent reviews and assessments. As such, they reflect the opinions and judgments of their respective authors. The project itself remains neutral and simply provides a platform for these lists to be shared. Users should exercise their own discretion when choosing to apply these blacklists. If any issues or concerns arise with a specific list, users should report them directly to the list's creator.
 
 :::
-
-# Subscriptions
-
-[Add your subscription](https://github.com/ublacklist/website/edit/main/src/pages/subscriptions.md)
 
 ## AI generated content {#ai-generated-content}
 
@@ -115,3 +113,5 @@ The blacklists featured on this page are user-generated content and are not endo
   - "Awesome list of uBlacklist subscriptions to block search results from google, bing, duckduckgo."
 - [Nicoles uBlacklist collection](https://github.com/nicoleahmed/nicoles-ublacklist/) by [Nicole Ahmed](https://github.com/nicoleahmed)
   - "A collection of uBlacklist subscriptions in various languages and for multiple purposes. Additionally a small personal blacklist for sites missed by other lists (particularly UK related sites)."
+
+[✏️ Add your subscription](https://github.com/ublacklist/website/edit/main/src/pages/subscriptions.md)

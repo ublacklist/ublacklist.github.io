@@ -60,7 +60,7 @@ Each item in the `pages` array represents a specific type of search result page 
 |          | `excludeRegex`   | string            | Regular expression pattern to exclude pages                               |
 |          | `userAgent`      | string            | Can be "any", "desktop", or "mobile"                                      |
 |          | `commonProps`    | object            | Common properties applied to all results on this page                     |
-|          | `delay`          | number \| boolean | Delay in milliseconds after page load, or boolean to enable/disable delay |
+|          | `delay`          | number or boolean | Delay in milliseconds after page load, or boolean to enable/disable delay |
 
 ## Result Definition {#result-definition}
 
@@ -68,8 +68,8 @@ Each item in the `results` array defines how to extract data from a single searc
 
 | Required | Property        | Type            | Description                                                                                   |
 | :------: | --------------- | --------------- | --------------------------------------------------------------------------------------------- |
-|    ✓     | `root`          | string \| array | Root command to locate result elements                                                        |
-|    ✓     | `url`           | string \| array | Property command to extract the URL from the result                                           |
+|    ✓     | `root`          | string or array | Root command to locate result elements                                                        |
+|    ✓     | `url`           | string or array | Property command to extract the URL from the result                                           |
 |          | `name`          | string          | Name of the result definition                                                                 |
 |          | `props`         | object          | Key-value pairs where keys are property names and values are property commands for extraction |
 |          | `button`        | array           | Button command to add block buttons to results                                                |

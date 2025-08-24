@@ -1,14 +1,18 @@
 {
   "title": {
-    "message": "uBlacklist"
+    "message": "uBlacklist",
+    "description": "Site title displayed in the navigation bar"
   },
   "item.label.docs": {
-    "message": "Docs"
+    "message": "Docs",
+    "description": "Navigation item label for documentation pages"
   },
   "item.label.subscriptions": {
-    "message": "Subscriptions"
+    "message": "Subscriptions",
+    "description": "Navigation item label for subscriptions page"
   },
   "item.label.privacyPolicy": {
-    "message": "Privacy Policy"
+    "message": "Privacy Policy",
+    "description": "Navigation item label for privacy policy page"
   }
 }

@@ -240,7 +240,7 @@ name: Your ruleset name
 
 It is a good idea to host your subscription on GitHub. Make sure to publish the **raw** URL (e.g., https://raw.githubusercontent.com/iorate/ublacklist-example-subscription/master/uBlacklist.txt).
 
-![raw url](/img/advanced-features/subscription-3.png)
+![Raw URL](/img/advanced-features/subscription-3.png)
 
 ### Subscription links {#subscription-links}
 

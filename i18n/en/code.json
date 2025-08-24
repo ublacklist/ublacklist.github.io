@@ -1,14 +1,18 @@
 {
   "pages.callback.success.title": {
-    "message": "Authentication Succeeded"
+    "message": "Authentication Succeeded",
+    "description": "Title displayed when authentication is successful"
   },
   "pages.callback.success.copyCode": {
-    "message": "Please copy the authorization code below and paste it in the options page."
+    "message": "Please copy the authorization code below and paste it in the options page.",
+    "description": "Instruction to copy authorization code to the extension options page"
   },
   "pages.callback.failure.title": {
-    "message": "Authentication Failed"
+    "message": "Authentication Failed",
+    "description": "Title displayed when authentication fails"
   },
   "pages.callback.failure.checkError": {
-    "message": "Please check the error message below."
+    "message": "Please check the error message below.",
+    "description": "Instruction to check the error message when authentication fails"
   }
 }

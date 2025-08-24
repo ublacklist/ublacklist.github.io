@@ -8,10 +8,8 @@ title: Privacy Policy
 - uBlacklist uses Google authentication **only** to save your settings on your Google Drive.
 - uBlacklist uses Dropbox authentication **only** to save your settings on your Dropbox.
 
-<!--
 :::note
 
-In the event of discrepancy between [the English version](pathname://../privacy-policy) and this translated version, the English version shall prevail.
+In the event of any discrepancy between this English version and any translated versions, this English version shall take precedence and prevail.
 
 :::
--->

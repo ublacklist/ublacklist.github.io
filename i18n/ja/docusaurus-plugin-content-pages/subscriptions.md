@@ -2,15 +2,13 @@
 title: 購読リスト
 ---
 
-:::warning[免責事項]
+# 購読リスト
+
+:::warning
 
 このページに掲載されているルールセットは、ユーザー生成コンテンツであり、uBlacklist プロジェクトによって承認、管理、または検証されたものではありません。これらのリストは、個々の寄稿者が独自のレビューと評価に基づいて作成および維持しています。そのため、それぞれの著者の意見と判断を反映しています。プロジェクト自体は中立を保ち、これらのリストを共有するためのプラットフォームを提供するだけです。これらのルールセットを適用する際は、ユーザー自身の裁量で行ってください。特定のルールセットに関して問題や懸念がある場合は、そのルールセットの作成者に直接報告してください。
 
 :::
-
-# 購読リスト
-
-[このページに購読を追加する](https://github.com/ublacklist/website/edit/main/i18n/ja/docusaurus-plugin-content-pages/subscriptions.md)
 
 ## AI 生成コンテンツ {#ai-generated-content}
 
@@ -113,3 +111,5 @@ title: 購読リスト
   - "Awesome list of uBlacklist subscriptions to block search results from google, bing, duckduckgo."
 - [Nicoles uBlacklist collection](https://github.com/nicoleahmed/nicoles-ublacklist/) by [Nicole Ahmed](https://github.com/nicoleahmed)
   - "A collection of uBlacklist subscriptions in various languages and for multiple purposes. Additionally a small personal blacklist for sites missed by other lists (particularly UK related sites)."
+
+[✏️ このページに購読を追加する](https://github.com/ublacklist/website/edit/main/src/pages/subscriptions.md)

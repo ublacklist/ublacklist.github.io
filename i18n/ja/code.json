@@ -1,14 +1,18 @@
 {
   "pages.callback.success.title": {
-    "message": "認証成功"
+    "message": "認証成功",
+    "description": "Title displayed when authentication is successful"
   },
   "pages.callback.success.copyCode": {
-    "message": "下の認可コードをコピーし、オプションページに戻ってペーストしてください。"
+    "message": "下の認可コードをコピーし、オプションページに戻ってペーストしてください。",
+    "description": "Instruction to copy authorization code to the extension options page"
   },
   "pages.callback.failure.title": {
-    "message": "認証失敗"
+    "message": "認証失敗",
+    "description": "Title displayed when authentication fails"
   },
   "pages.callback.failure.checkError": {
-    "message": "エラーメッセージを確認してください。"
+    "message": "エラーメッセージを確認してください。",
+    "description": "Instruction to check the error message when authentication fails"
   }
 }
