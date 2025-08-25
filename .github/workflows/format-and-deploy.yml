@@ -64,6 +64,7 @@ jobs:
           export_only_approved: true
           download_translations_args: --ignore-match
             --language=ja
+            --language=pt-BR
           push_translations: false
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
