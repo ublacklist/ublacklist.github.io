@@ -34,21 +34,21 @@
     "@mdx-js/react": "^3.1.0",
     "clsx": "^2.1.1",
     "prism-react-renderer": "^2.4.1",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.1.2",
+    "@biomejs/biome": "^2.2.2",
     "@docusaurus/module-type-aliases": "3.8.1",
     "@docusaurus/theme-classic": "3.8.1",
     "@docusaurus/tsconfig": "3.8.1",
     "@docusaurus/types": "3.8.1",
-    "@types/react": "^19.1.8",
-    "lefthook": "^1.12.2",
+    "@types/react": "^19.1.11",
+    "lefthook": "^1.12.3",
     "prettier": "^3.6.2",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.2"
   },
-  "packageManager": "pnpm@10.13.1",
+  "packageManager": "pnpm@10.15.0",
   "engines": {
     "pnpm": ">=10"
   }
