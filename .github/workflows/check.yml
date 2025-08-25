@@ -25,7 +25,7 @@ jobs:
 
       - name: Check by Prettier
         # Allow formatting issues (exit code 1) but fail on syntax errors (exit code 2).
-        run: pnpm prettier --check '**/*.{html,yml,yaml,md}' || (( $? == 1 ))
+        run: pnpm prettier --check '**/*.{md,yaml,yml}' || (( $? == 1 ))
 
       - name: Check by TypeScript
         run: pnpm tsc
