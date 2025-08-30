@@ -2,4 +2,8 @@ onlyBuiltDependencies:
   - "@biomejs/biome"
   - "@swc/core"
   - lefthook
+
+overrides:
+  "@rspack/core": 1.5.1
+
 useNodeVersion: 24.6.0
