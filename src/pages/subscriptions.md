@@ -90,7 +90,7 @@ The blacklists featured on this page are user-generated content and are not endo
 
 ## Italian {#italian}
 
-- [uBlacklist](https://github.com/mpolito1969/uBlacklist/blob/main/ublacklist.txt) by [mpolito1969](https://github.com/mpolito1969)
+- [Siti che subordinano l'accesso ai loro contenuti al pagamento di un abbonamento o all'accettazione di cookie](https://github.com/mpolito1969/uBlacklist) by [mpolito1969](https://github.com/mpolito1969)
   - "Blacklist di siti italiani che permettono di accedere ai loro contenuti solo dopo aver pagato un abbonamento o aver accettato i cookies."
   - "Blacklist containing Italian sites that only allows accessing their content after buying a subscription or accepting their cookies."
 
