@@ -88,7 +88,7 @@ The blacklists featured on this page are user-generated content and are not endo
 - [电脑技术类型的白名单 whitelist](https://github.com/bcaso/Google-Chinese-Results-Whitelist) by [bcaso](https://github.com/bcaso)
   - "白名单比更名单更高效，但是黑名单不能与白名单同时使用。"
 
-## Italian
+## Italian {#italian}
 
 - [uBlacklist](https://github.com/mpolito1969/uBlacklist/blob/main/ublacklist.txt) by [mpolito1969](https://github.com/mpolito1969)
   - "Blacklist di siti italiani che permettono di accedere ai loro contenuti solo dopo aver pagato un abbonamento o aver accettato i cookies."
