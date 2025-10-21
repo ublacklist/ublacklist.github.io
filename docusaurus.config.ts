@@ -15,9 +15,6 @@ const config: Config = {
   organizationName: "ublacklist",
   projectName: "ublacklist",
 
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-
   i18n: {
     defaultLocale: "en",
     locales: ["en", "ja", "pt-BR", "de"],
