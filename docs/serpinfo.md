@@ -107,7 +107,14 @@ Note: When `<element-command>` is omitted in any of the above commands, the curr
 
 ### Button Commands {#button-commands}
 
-- `[inset, <options>?, <element-command>?]`: Add a button to a specific position within the element. Options include:
+- `[icon, <options>?, <element-command>?]`: Add an icon button with a specific style. Options include:
+  - `style`: Inline style (e.g., `"top: 16px; right: 32px; --ub-icon-size: 16px;"`)
+
+- `[text, <options>?, <element-command>?]`: Add a text button with a specific position and style. Options include:
+  - `position`: `"beforebegin"`, `"afterbegin"`, `"beforeend"`, or `"afterend"` (default: `"beforeend"`)
+  - `style`: Inline style (e.g., `"color: var(--fg-color); font-size: 14px;"`)
+
+- `[inset, <options>?, <element-command>?]`: Add a button at a specific position within the element. Options include:
   - `top`: CSS length or percentage
   - `right`: CSS length or percentage
   - `bottom`: CSS length or percentage
