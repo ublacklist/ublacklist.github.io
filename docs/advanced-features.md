@@ -250,12 +250,6 @@ This feature is available in v8.11.0 or later. Users need to explicitly enable t
 
 :::
 
-:::note
-
-This feature does not work in Safari at the moment.
-
-:::
-
 For easier sharing of your subscription, you can create a subscription link in the following format:
 
 ```

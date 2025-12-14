@@ -176,9 +176,3 @@ To subscribe to a SERPINFO definition:
 To use subscription links, you need to enable them manually. Go to the extension's options page and turn on "Enable SERPINFO subscription links".
 
 :::
-
-:::note
-
-Subscription links do not work in Safari at the moment.
-
-:::
