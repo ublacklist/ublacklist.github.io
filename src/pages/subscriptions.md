@@ -50,8 +50,6 @@ The blacklists featured on this page are user-generated content and are not endo
 
 ## Spam {#spam}
 
-- [Search Engine Spam Blocklist](https://github.com/no-cmyk/Search-Engine-Spam-Blocklist) by [no-cmyk](https://github.com/no-cmyk)
-  - "Blocklist to filter out spam and junk domains from search engines results"
 - [Super-SEO-Spam-Suppressor](https://github.com/NotaInutilis/Super-SEO-Spam-Suppressor) by [Nota Inutilis](https://github.com/NotaInutilis)
   - "A blocklist targeting websites abusing SEO tactics to spam web searches with data pollution and security risks: content farms, scrapers, copycats, generative AIs, scams, advertisements, malwares, and useless garbage in general."
 - [SpamdexingSites](https://github.com/elliotwutingfeng/SpamdexingSites) by [Wu Tingfeng](https://github.com/elliotwutingfeng)
