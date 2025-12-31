@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "postinstall": "pnpm generate",
     "build": "docusaurus build",
     "check": "pnpm run /^check:/",
     "check:biome": "biome check",
-    "check:prettier": "prettier --check **/*.{md,yaml,yml}",
+    "check:prettier": "prettier --check **/*.{md,mdx,yaml,yml}",
     "check:tsc": "tsc",
     "clear": "docusaurus clear",
     "fix": "pnpm run /^fix:/",
     "fix:biome": "biome check --write",
-    "fix:prettier": "prettier --write **/*.{md,yaml,yml}",
+    "fix:prettier": "prettier --write **/*.{md,mdx,yaml,yml}",
+    "generate": "node community/generate.ts",
     "serve": "docusaurus serve",
     "start": "docusaurus start"
   },
@@ -43,10 +45,13 @@
     "@docusaurus/theme-classic": "3.9.2",
     "@docusaurus/tsconfig": "3.9.2",
     "@docusaurus/types": "3.9.2",
+    "@types/js-yaml": "^4.0.9",
     "@types/react": "^19.2.7",
+    "js-yaml": "^4.1.1",
     "lefthook": "^2.0.13",
     "prettier": "^3.7.4",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "zod": "^4.2.1"
   },
   "packageManager": "pnpm@10.27.0",
   "engines": {

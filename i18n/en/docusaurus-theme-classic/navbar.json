@@ -11,6 +11,10 @@
     "message": "Subscriptions",
     "description": "Navigation item label for subscriptions page"
   },
+  "item.label.communityRulesets": {
+    "message": "Community Rulesets",
+    "description": "Navigation item label for community rulesets page"
+  },
   "item.label.privacyPolicy": {
     "message": "Privacy Policy",
     "description": "Navigation item label for privacy policy page"

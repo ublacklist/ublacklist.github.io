@@ -14,5 +14,35 @@
   "pages.callback.failure.checkError": {
     "message": "Please check the error message below.",
     "description": "Instruction to check the error message when authentication fails"
+  },
+  "pages.communityRulesets.aiGeneratedContent": {
+    "message": "AI generated content"
+  },
+  "pages.communityRulesets.copycatSites": {
+    "message": "Copycat sites"
+  },
+  "pages.communityRulesets.gaming": {
+    "message": "Gaming"
+  },
+  "pages.communityRulesets.mediaSites": {
+    "message": "Media sites"
+  },
+  "pages.communityRulesets.spam": {
+    "message": "Spam"
+  },
+  "pages.communityRulesets.specificSites": {
+    "message": "Specific sites"
+  },
+  "pages.communityRulesets.chinese": {
+    "message": "Chinese"
+  },
+  "pages.communityRulesets.italian": {
+    "message": "Italian"
+  },
+  "pages.communityRulesets.japanese": {
+    "message": "Japanese"
+  },
+  "pages.communityRulesets.otherRulesetLists": {
+    "message": "Other ruleset lists"
   }
 }

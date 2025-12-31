@@ -7,4 +7,7 @@ onlyBuiltDependencies:
   - core-js-pure
   - lefthook
 
+overrides:
+  "@rspack/core": "1.6.5" # 1.6.6 and later hang on build (?)
+
 useNodeVersion: 25.2.1

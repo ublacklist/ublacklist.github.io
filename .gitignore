@@ -4,3 +4,6 @@ node_modules
 # Docusaurus cache and generated files
 .docusaurus
 build
+
+# Generated files
+*.generated.ts
