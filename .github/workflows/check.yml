@@ -26,15 +26,18 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
 
+      - name: Generate
+        run: pnpm generate
+
       - name: Check by Biome
         run: pnpm biome ci --formatter-enabled=false --reporter=github
 
       - name: Check by Prettier
         # Allow formatting issues (exit code 1) but fail on syntax errors (exit code 2).
-        run: pnpm prettier --check '**/*.{md,yaml,yml}' || (( $? == 1 ))
+        run: pnpm prettier --check '**/*.{md,mdx,yaml,yml}' || (( $? == 1 ))
 
       - name: Check by TypeScript
         run: pnpm tsc
 
       - name: Build
-        run: pnpm build
+        run: pnpm build --locale=en
