@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "postinstall": "pnpm generate || true",
     "build": "docusaurus build",
     "check": "pnpm run /^check:/",
     "check:biome": "biome check",
-    "check:prettier": "prettier --check **/*.{md,yaml,yml}",
+    "check:prettier": "prettier --check **/*.{md,mdx,yaml,yml}",
     "check:tsc": "tsc",
     "clear": "docusaurus clear",
     "fix": "pnpm run /^fix:/",
     "fix:biome": "biome check --write",
-    "fix:prettier": "prettier --write **/*.{md,yaml,yml}",
+    "fix:prettier": "prettier --write **/*.{md,mdx,yaml,yml}",
+    "generate": "node community/generate.ts",
     "serve": "docusaurus serve",
     "start": "docusaurus start"
   },
@@ -28,27 +30,30 @@
     ]
   },
   "dependencies": {
-    "@docusaurus/core": "3.9.1",
-    "@docusaurus/faster": "3.9.1",
-    "@docusaurus/preset-classic": "3.9.1",
+    "@docusaurus/core": "3.9.2",
+    "@docusaurus/faster": "3.9.2",
+    "@docusaurus/preset-classic": "3.9.2",
     "@mdx-js/react": "^3.1.1",
     "clsx": "^2.1.1",
     "prism-react-renderer": "^2.4.1",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.2.6",
-    "@docusaurus/module-type-aliases": "3.9.1",
-    "@docusaurus/theme-classic": "3.9.1",
-    "@docusaurus/tsconfig": "3.9.1",
-    "@docusaurus/types": "3.9.1",
-    "@types/react": "^19.2.2",
-    "lefthook": "^1.12.3",
-    "prettier": "^3.6.2",
-    "typescript": "^5.9.3"
+    "@biomejs/biome": "^2.3.10",
+    "@docusaurus/module-type-aliases": "3.9.2",
+    "@docusaurus/theme-classic": "3.9.2",
+    "@docusaurus/tsconfig": "3.9.2",
+    "@docusaurus/types": "3.9.2",
+    "@types/js-yaml": "^4.0.9",
+    "@types/react": "^19.2.7",
+    "js-yaml": "^4.1.1",
+    "lefthook": "^2.0.13",
+    "prettier": "^3.7.4",
+    "typescript": "^5.9.3",
+    "zod": "^4.2.1"
   },
-  "packageManager": "pnpm@10.18.3",
+  "packageManager": "pnpm@10.27.0",
   "engines": {
     "pnpm": ">=10"
   }

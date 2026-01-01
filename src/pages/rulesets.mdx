@@ -1,0 +1,29 @@
+---
+title: Community Rulesets
+---
+
+import rulesets from "../../community/rulesets.generated.ts";
+import { Resources, makeResourcesTOC } from "./_resources.tsx";
+
+export const toc = makeResourcesTOC(rulesets);
+
+:::warning
+
+These rulesets are user-generated and not endorsed or verified by the uBlacklist project. They reflect the opinions of their respective authors. Use at your own discretion and report issues directly to authors.
+
+:::
+
+:::note
+
+To use the subscription links, you need to enable ruleset subscription links in the options page first.
+
+:::
+
+<Resources
+  resources={rulesets}
+  makeSubscriptionLink={(url) =>
+    `https://ublacklist.github.io/rulesets/subscribe?url=${encodeURIComponent(url)}`
+  }
+/>
+
+[✏️ Add your ruleset](https://github.com/ublacklist/ublacklist.github.io/edit/main/community/rulesets.yml)

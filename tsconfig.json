@@ -4,6 +4,7 @@
   "compilerOptions": {
     "exactOptionalPropertyTypes": true,
     "noUncheckedIndexedAccess": true,
-    "strict": true
+    "strict": true,
+    "allowImportingTsExtensions": true
   }
 }

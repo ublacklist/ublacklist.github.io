@@ -1,0 +1,238 @@
+ai-generated-content:
+  - name: ublacklist-ai
+    description: Block those pesky AI-Art things on Google Images to make searching for Backgrounds or Images enjoyable again.
+    homepage: https://github.com/HerXayah/ublacklist-ai
+    author:
+      name: Sarah Engel
+      url: https://github.com/PrincessAkira
+    subscription: https://raw.githubusercontent.com/HerXayah/ublacklist-ai/refs/heads/main/ublacklist-ai.txt
+  - name: uBlockOrigin & uBlacklist Huge AI Blocklist
+    description: A huge blocklist of sites that contain AI generated content for uBlock Origin & uBlacklist.
+    homepage: https://github.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist
+    author:
+      name: laylavish
+      url: https://github.com/laylavish
+    subscription: https://raw.githubusercontent.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist/refs/heads/main/list_uBlacklist.txt
+
+copycat-sites:
+  - name: uBlacklist GitHub Translation
+    description: Exclude domains that serve machine-translated pages of READMEs, Issues, Pull requests, etc. on GitHub from Google search.
+    homepage: https://github.com/arosh/ublacklist-github-translation
+    author:
+      name: Sho Iizuka
+      url: https://github.com/arosh
+    subscription: https://raw.githubusercontent.com/arosh/ublacklist-github-translation/master/uBlacklist.txt
+  - name: uBlacklist Stack Overflow Translation
+    description: Exclude domains from Google search that serve machine-translated sites of Stack Exchange.
+    homepage: https://github.com/arosh/ublacklist-stackoverflow-translation
+    author:
+      name: Sho Iizuka
+      url: https://github.com/arosh
+    subscription: https://raw.githubusercontent.com/arosh/ublacklist-stackoverflow-translation/master/uBlacklist.txt
+  - name: uBlock-Origin-dev-filter
+    description: Filters to block and remove copycat-websites from DuckDuckGo, Google and other search engines. Used to be specific to dev websites like StackOverflow or GitHub, but it currently supports others like Wikipedia.
+    homepage: https://github.com/quenhus/uBlock-Origin-dev-filter
+    author:
+      name: quenhus
+      url: https://github.com/quenhus
+    subscription: https://raw.githubusercontent.com/quenhus/uBlock-Origin-dev-filter/main/dist/other_format/uBlacklist/all.txt
+
+gaming:
+  - name: Safebrowsing for Minecrafters 🛡️⛏️
+    description: This filterlist was crafted to help users and creators in avoiding malicious Minecraft-related websites, including, but not limited to, those distributing malicious and illegal copies of the game or Mods, repost sites which monetize stolen content from creators, and sites impersonating trusted websites like Minecraft.net, CurseForge, or Mcpedl.com.
+    homepage: https://codeberg.org/legendary_creeper/mc-safebrowsing
+    author: Legendary Creeper
+    subscription: https://codeberg.org/legendary_creeper/mc-safebrowsing/raw/branch/main/mc-sb-ublacklist.txt
+
+media-sites:
+  - name: Axel Springer SE blacklist
+    description: Hides all Axel Springer SE media outlets, including mentiones/topics on other sides
+    homepage: https://github.com/RubenKelevra/ublacklist_springer
+    author:
+      name: RubenKelevra
+      url: https://github.com/RubenKelevra
+    subscription: https://raw.githubusercontent.com/RubenKelevra/ublacklist_springer/master/ublacklist-springer.txt
+  - name: Conspiracy Media blacklist
+    description: Hides (most) conspiracy media outlets
+    homepage: https://github.com/RubenKelevra/ublacklist_conspiracy
+    author:
+      name: RubenKelevra
+      url: https://github.com/RubenKelevra
+    subscription: https://raw.githubusercontent.com/RubenKelevra/ublacklist_conspiracy/master/ublacklist-conspiracy-media-full.txt
+  - name: Fake-News Media blacklist
+    description: Hides (most) fake news media outlets
+    homepage: https://github.com/RubenKelevra/ublacklist_fakenews
+    author:
+      name: RubenKelevra
+      url: https://github.com/RubenKelevra
+    subscription: https://raw.githubusercontent.com/RubenKelevra/ublacklist_fakenews/master/ublacklist-fakenews-media-full.txt
+  - name: Leftwing Media blacklist
+    description: Hides (most) leftwing media outlets
+    homepage: https://github.com/RubenKelevra/ublacklist_leftwing_media
+    author:
+      name: RubenKelevra
+      url: https://github.com/RubenKelevra
+    subscription: https://raw.githubusercontent.com/RubenKelevra/ublacklist_leftwing_media/master/ublacklist-leftwing-media.txt
+  - name: Rightwing Media blacklist
+    description: Hides (most) rightwing media outlets
+    homepage: https://github.com/RubenKelevra/ublacklist_rightwing_media
+    author:
+      name: RubenKelevra
+      url: https://github.com/RubenKelevra
+    subscription: https://raw.githubusercontent.com/RubenKelevra/ublacklist_rightwing_media/master/ublacklist-rightwing-media.txt
+
+spam:
+  - name: Super-SEO-Spam-Suppressor
+    description: "A blocklist targeting websites abusing SEO tactics to spam web searches with data pollution and security risks: content farms, scrapers, copycats, generative AIs, scams, advertisements, malwares, and useless garbage in general."
+    homepage: https://github.com/NotaInutilis/Super-SEO-Spam-Suppressor
+    author:
+      name: Nota Inutilis
+      url: https://github.com/NotaInutilis
+    subscription: https://raw.githubusercontent.com/NotaInutilis/Super-SEO-Spam-Suppressor/main/ublacklist.txt
+  - name: SpamdexingSites
+    description: URL feed for blocking spamdexing websites.
+    homepage: https://github.com/elliotwutingfeng/SpamdexingSites
+    author:
+      name: Wu Tingfeng
+      url: https://github.com/elliotwutingfeng
+    subscription: https://raw.githubusercontent.com/elliotwutingfeng/SpamdexingSites/refs/heads/main/blocklist_UBL.txt
+  - name: Ad and tracking server domain list
+    description: "Ad and tracking server domain list maintained since 2001. Doesn't have a dedicated uBlacklist/match patterns format, but use of the prepend and append parameters produce a URL that works perfectly for uBlacklist: https://pgl.yoyo.org/as/serverlist.php?hostformat=plain&mimetype=plaintext&prepend=*://*.&append=/*&showintro=0"
+    homepage: https://pgl.yoyo.org/adservers/
+    author:
+      name: Peter Lowe
+      url: https://pgl.yoyo.org/
+    subscription: https://pgl.yoyo.org/as/serverlist.php?hostformat=plain&mimetype=plaintext&prepend=*://*.&append=/*&showintro=0
+  - name: BadWebsiteBlocklist
+    description: Blocks AI generated spam, misleading advertisements, SEO bait, badware sites, and generally low-effort spam websites from your search engine results!
+    homepage: https://github.com/popcar2/BadWebsiteBlocklist
+    author:
+      name: popcar2
+      url: https://github.com/popcar2
+    subscription: https://raw.githubusercontent.com/popcar2/BadWebsiteBlocklist/refs/heads/main/uBlacklist.txt
+
+specific-sites:
+  - name: ublacklist-pinterest
+    description: ublacklist to block all pinterest websites from google, ddg, bing
+    homepage: https://github.com/rjaus/ublacklist-pinterest
+    author:
+      name: Riley James
+      url: https://github.com/rjaus
+    subscription: https://raw.githubusercontent.com/rjaus/ublacklist-pinterest/refs/heads/main/ublacklist-pinterest.txt
+  - name: ublacklist-w3schools
+    description: Hide W3Schools from search results
+    homepage: https://codeberg.org/Freso/ublacklist-w3schools
+    author:
+      name: Freso
+      url: https://freso.dk/
+    subscription: https://codeberg.org/Freso/ublacklist-w3schools/raw/branch/main/ublacklist-w3schools.txt
+
+chinese:
+  - name: uBlacklist subscription compilation
+    description: 这是一个 uBlacklist 订阅地址合集，搜集了网上大部分的订阅地址合并成一个。
+    homepage: https://github.com/eallion/uBlacklist-subscription-compilation
+    author:
+      name: Charles Chin
+      url: https://github.com/eallion
+    subscription: https://raw.githubusercontent.com/eallion/uBlacklist-subscription-compilation/refs/heads/main/uBlacklist.txt
+  - name: 「小 X 知识百科网」清单
+    description: List of content farm sites like g.penzai.com.
+    homepage: https://github.com/wdmpa/content-farm-list
+    author:
+      name: Dallas Lu
+      url: https://github.com/dallaslu
+    subscription: https://raw.githubusercontent.com/wdmpa/content-farm-list/main/uBlacklist.txt
+  - name: ublacklist-rules
+    description: Multiple blocklists for content farms, bad UX sites, and geo-blocking sites.
+    homepage: https://github.com/MisakaMikoto-35c5/ublacklist-rules
+    author:
+      name: "@MisakaMikoto-35c5"
+      url: https://github.com/MisakaMikoto-35c5
+    subitems:
+      - name: content-farm.txt
+        description: 清单中的网站大多为机器人爬虫网络采集而来的内容，也可能包含一些人工撰写但质量低下的内容。
+        subscription: https://raw.githubusercontent.com/MisakaMikoto-35c5/ublacklist-rules/master/content-farm.txt
+      - name: bad-content.txt
+        description: 清单中的网站大多为用户体验极其不友好的网站。
+        subscription: https://raw.githubusercontent.com/MisakaMikoto-35c5/ublacklist-rules/master/bad-content.txt
+      - name: not-friendly-captcha.txt
+        description: 清单中的网站大多为根据 IP 所在国家/地理位置 来屏蔽普通用户的网站且不能认定内容有区域版权限制。
+        subscription: https://raw.githubusercontent.com/MisakaMikoto-35c5/ublacklist-rules/master/not-friendly-captcha.txt
+  - name: uBlacklist-Subscription
+    description: 使用它可以屏蔽一些垃圾网站占据你的搜索结果，比如卡饭教程、CSDN 等等。
+    homepage: https://github.com/scyrte/uBlacklist-Subscription
+    author:
+      name: Scyrte
+      url: https://github.com/scyrte
+    subscription: https://raw.githubusercontent.com/scyrte/uBlacklist-Subscription/refs/heads/master/blacklist.txt
+  - name: 終結內容農場 uBlacklist 黑名單
+    description: 「終結內容農場」瀏覽器套件現在也提供 uBlacklist 格式的黑名單、包括標準內容農場、類內容農場、擴充內容農場、劣質複製農場等。
+    homepage: https://danny0838.github.io/content-farm-terminator/zh/subscriptions-ublacklist
+    subscription: https://danny0838.github.io/content-farm-terminator/files/blocklist-ublacklist/content-farms.txt
+  - name: 电脑技术类型的白名单 whitelist
+    description: 白名单比更名单更高效，但是黑名单不能与白名单同时使用。
+    homepage: https://github.com/bcaso/Computer-Science-Whitelist
+    author:
+      name: bcaso
+      url: https://github.com/bcaso
+    subscription: https://raw.githubusercontent.com/bcaso/Computer-Science-Whitelist/main/whitelists/whitelist.txt
+
+italian:
+  - name: Siti che subordinano l'accesso ai loro contenuti al pagamento di un abbonamento o all'accettazione di cookie
+    description: "Blacklist di siti italiani che permettono di accedere ai loro contenuti solo dopo aver pagato un abbonamento o aver accettato i cookies. / Blacklist containing Italian sites that only allows accessing their content after buying a subscription or accepting their cookies."
+    homepage: https://github.com/mpolito1969/uBlacklist
+    author:
+      name: mpolito1969
+      url: https://github.com/mpolito1969
+    subscription: https://raw.githubusercontent.com/mpolito1969/uBlacklist/refs/heads/main/ublacklist.txt
+
+japanese:
+  - name: uBlacklistRule
+    description: 技術系スパムサイト、コピペサイト、5ch のコピーサイト、YouTube、ニコニコ動画などのコピーサイト、コピーゲーム攻略サイト、ゲハブログ、その他検索の役に立たないサイト
+    homepage: https://github.com/ncaq/uBlacklistRule
+    author:
+      name: ncaq
+      url: https://github.com/ncaq
+    subscription: https://raw.githubusercontent.com/ncaq/uBlacklistRule/master/uBlacklist.txt
+  - name: ublacklist-programming-school
+    description: プログラミングスクールやその卒業生の低質な記事、スクール紹介サイトなどを除外する用
+    homepage: https://github.com/108EAA0A/ublacklist-programming-school
+    author:
+      name: "@108EAA0A"
+      url: https://github.com/108EAA0A
+    subscription: https://raw.githubusercontent.com/108EAA0A/ublacklist-programming-school/refs/heads/main/uBlacklist.txt
+  - name: ublacklist-search-result
+    description: SNS やショッピングサイトなどの検索結果ページを除外するための、uBlacklist のブラックリスト
+    homepage: https://github.com/munierujp/ublacklist-search-result
+    author:
+      name: "@munierujp"
+      url: https://github.com/munierujp
+    subscription: https://raw.githubusercontent.com/munierujp/ublacklist-search-result/refs/heads/master/blacklist.txt
+  - name: ublacklist-scam-net-shops
+    description: 怪しいネットショップを検索結果から除外
+    homepage: https://github.com/exoego/ublacklist-scam-net-shops
+    author:
+      name: "@exoego"
+      url: https://github.com/exoego
+    subscription: https://raw.githubusercontent.com/exoego/ublacklist-scam-net-shops/refs/heads/master/uBlacklist.txt
+  - name: uBlacklist-filter-by-kdroidwin
+    description: 詐欺サイトや偽サイトやいかがでしたかサイトなどを検索結果から除外
+    homepage: https://github.com/Kdroidwin/uBlacklist-filter-by-kdroidwin
+    author:
+      name: "@Kdroidwin"
+      url: https://github.com/Kdroidwin
+    subscription: https://raw.githubusercontent.com/Kdroidwin/uBlacklist-filter-by-kdroidwin/main/uBlacklist.txt
+
+other-ruleset-lists:
+  - name: awesome-ublacklist
+    description: Awesome list of uBlacklist subscriptions to block search results from google, bing, duckduckgo.
+    homepage: https://github.com/rjaus/awesome-ublacklist
+    author:
+      name: Riley James
+      url: https://github.com/rjaus
+  - name: Nicoles uBlacklist collection
+    description: A collection of uBlacklist subscriptions in various languages and for multiple purposes. Additionally a small personal blacklist for sites missed by other lists (particularly UK related sites).
+    homepage: https://github.com/nicoleahmed/nicoles-ublacklist/
+    author:
+      name: Nicole Ahmed
+      url: https://github.com/nicoleahmed

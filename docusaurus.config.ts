@@ -15,9 +15,12 @@ const config: Config = {
   organizationName: "ublacklist",
   projectName: "ublacklist",
 
+  // Anchors in src/pages/rulesets.mdx are generated programmatically
+  onBrokenAnchors: "ignore",
+
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "ja", "pt-BR", "de"],
+    locales: ["en", "de", "ja", "pt-BR"],
   },
 
   presets: [
@@ -47,8 +50,8 @@ const config: Config = {
           label: "docs",
         },
         {
-          to: "subscriptions",
-          label: "subscriptions",
+          to: "rulesets",
+          label: "communityRulesets",
         },
         {
           to: "privacy-policy",
