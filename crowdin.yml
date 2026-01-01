@@ -27,3 +27,8 @@ files:
     translation: /i18n/%two_letters_code%/docusaurus-plugin-content-pages/%original_file_name%
     dest: /website/pages/%original_file_name%
     languages_mapping: *languages_mapping
+
+  - source: /src/pages/*.mdx
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-pages/%original_file_name%
+    dest: /website/pages/%original_file_name%
+    languages_mapping: *languages_mapping
