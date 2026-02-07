@@ -8,7 +8,7 @@
     "check": "pnpm run /^check:/",
     "check:biome": "biome check",
     "check:prettier": "prettier --check **/*.{md,mdx,yaml,yml}",
-    "check:tsc": "tsc",
+    "check:typescript": "tsc",
     "clear": "docusaurus clear",
     "fix": "pnpm run /^fix:/",
     "fix:biome": "biome check --write",

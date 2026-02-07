@@ -1,10 +1,15 @@
 {
   "extends": "@docusaurus/tsconfig",
-  "exclude": [".docusaurus", "build"],
+
+  "exclude": [".docusaurus", "build", "node_modules"],
+
   "compilerOptions": {
+    // Type Checking
     "exactOptionalPropertyTypes": true,
     "noUncheckedIndexedAccess": true,
     "strict": true,
+
+    // Modules
     "allowImportingTsExtensions": true
   }
 }
