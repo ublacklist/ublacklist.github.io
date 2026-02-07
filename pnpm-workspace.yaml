@@ -1,13 +1,12 @@
+allowBuilds:
+  "@biomejs/biome": true
+  "@swc/core": true
+  core-js: false
+  core-js-pure: false
+  lefthook: true
+
 minimumReleaseAge: 1440 # 1 day
 
-onlyBuiltDependencies:
-  - "@biomejs/biome"
-  - "@swc/core"
-  - core-js
-  - core-js-pure
-  - lefthook
+trustPolicy: no-downgrade
 
-overrides:
-  "@rspack/core": "1.6.5" # 1.6.6 and later hang on build (?)
-
-useNodeVersion: 25.2.1
+blockExoticSubdeps: true
