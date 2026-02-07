@@ -33,7 +33,7 @@ jobs:
         run: pnpm prettier --check '**/*.{md,mdx,yaml,yml}'
 
       - name: Check by TypeScript
-        run: pnpm tsc
+        run: pnpm tsgo
 
       - name: Build
         run: pnpm build --locale=en

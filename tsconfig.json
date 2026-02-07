@@ -1,6 +1,4 @@
 {
-  "extends": "@docusaurus/tsconfig",
-
   "exclude": [".docusaurus", "build", "node_modules"],
 
   "compilerOptions": {
@@ -10,6 +8,22 @@
     "strict": true,
 
     // Modules
-    "allowImportingTsExtensions": true
+    "allowImportingTsExtensions": true,
+    "module": "preserve",
+
+    // Emit
+    "noEmit": true,
+
+    // Interop Constraints
+    "erasableSyntaxOnly": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+
+    // Language and Environment
+    "jsx": "preserve",
+    "target": "es2022",
+
+    // Completeness
+    "skipLibCheck": true
   }
 }
