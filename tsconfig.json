@@ -1,10 +1,29 @@
 {
-  "extends": "@docusaurus/tsconfig",
-  "exclude": [".docusaurus", "build"],
+  "exclude": [".docusaurus", "build", "node_modules"],
+
   "compilerOptions": {
+    // Type Checking
     "exactOptionalPropertyTypes": true,
     "noUncheckedIndexedAccess": true,
     "strict": true,
-    "allowImportingTsExtensions": true
+
+    // Modules
+    "allowImportingTsExtensions": true,
+    "module": "preserve",
+
+    // Emit
+    "noEmit": true,
+
+    // Interop Constraints
+    "erasableSyntaxOnly": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+
+    // Language and Environment
+    "jsx": "preserve",
+    "target": "es2022",
+
+    // Completeness
+    "skipLibCheck": true
   }
 }

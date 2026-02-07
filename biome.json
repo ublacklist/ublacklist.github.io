@@ -8,19 +8,23 @@
     "clientKind": "git",
     "useIgnoreFile": true
   },
+  "formatter": {
+    "indentStyle": "space"
+  },
   "linter": {
     "rules": {
       "correctness": {
+        "useImportExtensions": "warn",
         "useUniqueElementIds": {
           "level": "error",
           "options": {
             "excludedComponents": ["Translate"]
           }
         }
+      },
+      "style": {
+        "useBlockStatements": "warn"
       }
     }
-  },
-  "formatter": {
-    "indentStyle": "space"
   }
 }
