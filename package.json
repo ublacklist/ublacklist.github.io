@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "postinstall": "pnpm generate || true",
+    "postinstall": "pnpm generate",
     "build": "docusaurus build",
     "check": "pnpm run /^check:/",
     "check:biome": "biome check",

@@ -26,9 +26,6 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
 
-      - name: Generate
-        run: pnpm generate
-
       - name: Check by Biome
         run: pnpm biome ci --formatter-enabled=false --reporter=github
 
