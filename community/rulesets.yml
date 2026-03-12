@@ -177,6 +177,15 @@ chinese:
       url: https://github.com/bcaso
     subscription: https://raw.githubusercontent.com/bcaso/Computer-Science-Whitelist/main/whitelists/whitelist.txt
 
+french:
+  - name: Reworld Media
+    description: "Domains belonging to the Reworld Media group, known for monetizing the personal data of its readers for targeted advertising purposes."
+    homepage: https://github.com/benji1000/reworld-media-domain-list
+    author:
+      name: benji1000
+      url: https://github.com/benji1000
+    subscription: https://raw.githubusercontent.com/benji1000/reworld-media-domain-list/refs/heads/main/domains.txt
+
 italian:
   - name: Siti che subordinano l'accesso ai loro contenuti al pagamento di un abbonamento o all'accettazione di cookie
     description: "Blacklist di siti italiani che permettono di accedere ai loro contenuti solo dopo aver pagato un abbonamento o aver accettato i cookies. / Blacklist containing Italian sites that only allows accessing their content after buying a subscription or accepting their cookies."
