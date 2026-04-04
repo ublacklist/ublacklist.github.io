@@ -165,7 +165,7 @@ You can share your SERPINFO definitions with others by hosting your YAML file an
 3. Share the subscription link with users using this format:
 
 ```
-https://ublacklist.github.io/serpinfo/subscribe?url=<url-encoded-url>
+https://ublacklist.github.io/rulesets/subscribe?url=<url-encoded-url>
 ```
 
 Where `<url-encoded-url>` is your hosted YAML file's URL encoded with [URL encoding](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent).
