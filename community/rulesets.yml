@@ -222,7 +222,14 @@ japanese:
       name: "@Kdroidwin"
       url: https://github.com/Kdroidwin
     subscription: https://raw.githubusercontent.com/Kdroidwin/uBlacklist-filter-by-kdroidwin/main/uBlacklist.txt
-
+  portuguese:                                                                 
+    - name: "codeberg.org/gmg48/blocklist"
+      description: Curated list of harmful domains, targeting AI-generated content, fake news, historical denialism, and SEO spam. Mainly targeting Portuguese-language sites.
+      homepage: https://codeberg.org/gmg48/blocklist
+      author:
+        name: Guilherme Gondim
+        url: https://codeberg.org/gmg48
+      subscription: https://codeberg.org/gmg48/blocklist/raw/branch/main/ublacklist.txt
 other-ruleset-lists:
   - name: awesome-ublacklist
     description: Awesome list of uBlacklist subscriptions to block search results from google, bing, duckduckgo.
