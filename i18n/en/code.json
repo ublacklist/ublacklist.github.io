@@ -42,6 +42,9 @@
   "pages.communityRulesets.japanese": {
     "message": "Japanese"
   },
+  "pages.communityRulesets.portuguese": {
+    "message": "Portuguese"
+  },
   "pages.communityRulesets.otherRulesetLists": {
     "message": "Other ruleset lists"
   }
