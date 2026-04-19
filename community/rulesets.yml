@@ -245,3 +245,9 @@ other-resources:
     author:
       name: Nicole Ahmed
       url: https://github.com/nicoleahmed
+  - name: Ruleset generator
+    description: Python script to generate rule sets. It takes a name like alamy and generates a list of pretty much every known domain, e.g., alamy.eu, alamy.de, etc, tries to resolve the names in parallel, and creates rules for the domains that are able to resolve.
+    homepage: https://codeberg.org/bananazon/ublacklist-generator
+    author:
+      name: Cursed Bananazon
+      url: https://codeberg.org/bananazon
