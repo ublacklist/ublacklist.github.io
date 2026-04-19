@@ -232,7 +232,7 @@ portuguese:
       url: https://codeberg.org/gmg48
     subscription: https://codeberg.org/gmg48/blocklist/raw/branch/main/ublacklist.txt
 
-other-ruleset-lists:
+other-resources:
   - name: awesome-ublacklist
     description: Awesome list of uBlacklist subscriptions to block search results from google, bing, duckduckgo.
     homepage: https://github.com/rjaus/awesome-ublacklist
