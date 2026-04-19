@@ -232,7 +232,7 @@ portuguese:
       url: https://codeberg.org/gmg48
     subscription: https://codeberg.org/gmg48/blocklist/raw/branch/main/ublacklist.txt
 
-other-ruleset-lists:
+other-resources:
   - name: awesome-ublacklist
     description: Awesome list of uBlacklist subscriptions to block search results from google, bing, duckduckgo.
     homepage: https://github.com/rjaus/awesome-ublacklist
@@ -245,3 +245,9 @@ other-ruleset-lists:
     author:
       name: Nicole Ahmed
       url: https://github.com/nicoleahmed
+  - name: Ruleset generator
+    description: Python script to generate rule sets. It takes a name like alamy and generates a list of pretty much every known domain, e.g., alamy.eu, alamy.de, etc, tries to resolve the names in parallel, and creates rules for the domains that are able to resolve.
+    homepage: https://codeberg.org/bananazon/ublacklist-generator
+    author:
+      name: Cursed Bananazon
+      url: https://codeberg.org/bananazon
