@@ -81,6 +81,9 @@ const config: Config = {
     tableOfContents: {
       maxHeadingLevel: 4,
     },
+    colorMode: {
+      respectPrefersColorScheme: true,
+    },
   } satisfies Preset.ThemeConfig,
 
   future: {
