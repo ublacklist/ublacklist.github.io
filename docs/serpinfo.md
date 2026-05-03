@@ -3,13 +3,11 @@ title: SERPINFO
 sidebar_position: 3
 ---
 
-:::note
+SERPINFO is the mechanism that allows uBlacklist to work on search engines such as Google, Bing, and DuckDuckGo. Each SERPINFO is a YAML file that describes how to locate search results on a specific search engine's results page, so that uBlacklist can block, highlight, or attach buttons to them.
 
-SERPINFO was introduced in v8.11.0 for Chrome and Firefox as an experimental feature and has been enabled by default starting from v9.
+uBlacklist ships with built-in SERPINFO definitions for the [supported search engines](https://github.com/iorate/ublacklist#supported-search-engines). You can also subscribe to SERPINFO published by others, or write your own to support a search engine that is not yet covered.
 
-:::
-
-SERPINFO is a system for defining and parsing search engine results pages (SERPs) using YAML definition files. It allows for extracting structured information from search results across various search engines.
+The SERPINFO options page is opened from **Other search engines** on the extension's options page. There you can enable or disable individual SERPINFO, subscribe to ones published by others, and write your own under **My SERPINFO**.
 
 ## File Format {#file-format}
 
