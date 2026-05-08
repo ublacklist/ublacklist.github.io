@@ -43,6 +43,22 @@ gaming:
     homepage: https://codeberg.org/legendary_creeper/mc-safebrowsing
     author: Legendary Creeper
     subscription: https://codeberg.org/legendary_creeper/mc-safebrowsing/raw/branch/main/mc-sb-ublacklist.txt
+  - name: TMW BL wikifarms
+    description: Aggregates unwanted wikifarms as identified by wiki.gg Redirect and Indie Wiki Buddy.
+    homepage: https://github.com/codeshell/blocklists/tree/main/by-format/ublacklist
+    author:
+      name: codeshell
+      url: https://github.com/codeshell
+    subitems:
+      - name: wikifarms.all.txt
+        description: Aggregates all wikifarms lists.
+        subscription: https://raw.githubusercontent.com/codeshell/blocklists/main/by-format/ublacklist/wikifarms.all.txt
+      - name: wikifarms-by-wiki-gg.txt
+        description: wiki.gg identified wikifarms only.
+        subscription: https://raw.githubusercontent.com/codeshell/blocklists/main/by-format/ublacklist/wikifarms-by-wiki-gg.txt
+      - name: wikifarms-by-indie-wiki.txt
+        description: indie-wiki identified wikifarms only.
+        subscription: https://raw.githubusercontent.com/codeshell/blocklists/main/by-format/ublacklist/wikifarms-by-indie-wiki.txt
 
 media-sites:
   - name: Axel Springer SE blacklist
