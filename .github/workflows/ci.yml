@@ -1,8 +1,10 @@
-name: Check
+name: CI
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
-  workflow_call:
   workflow_dispatch:
 
 permissions: {}
@@ -38,14 +40,47 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-rspack-
 
-      - name: Check by Biome
+      - name: pnpm biome ci
         run: pnpm biome ci --reporter=github
 
-      - name: Check by Prettier
+      - name: pnpm prettier
         run: pnpm prettier --check '**/*.{md,mdx,yaml,yml}'
 
-      - name: Check by TypeScript
+      - name: pnpm tsgo
         run: pnpm tsgo
 
-      - name: Build
+      - name: pnpm build
         run: pnpm build --locale=en
+
+  actionlint:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Run actionlint
+        uses: docker://rhysd/actionlint:1.7.12@sha256:9d36088643581e728c969f35141f88139fec77280b2be23c1f66f8e40e1025e7
+        with:
+          args: -color
+
+  zizmor:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      security-events: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Run zizmor
+        uses: zizmorcore/zizmor-action@5f14fd08f7cf1cb1609c1e344975f152c7ee938d # v0.5.6
