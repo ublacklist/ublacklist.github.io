@@ -4,10 +4,11 @@ sidebar_position: 0
 slug: /
 ---
 
-uBlacklist is a browser extension that filters Google Search results, available for Chrome, Firefox, and Safari.
+uBlacklist is a browser extension that filters Google Search results, available for Chrome, Firefox, Edge, and Safari.
 
 - [Chrome Web Store](https://chrome.google.com/webstore/detail/ublacklist/pncfbmialoiaghdehhbnbhkkgmjanfhe/)
 - [Firefox Add-ons](https://addons.mozilla.org/en/firefox/addon/ublacklist/)
+- [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/ublacklist/feedneoaheedjlhokipclogaoejelcbb)
 - [App Store](https://apps.apple.com/us/app/ublacklist-for-safari/id1547912640) (maintained by [Group-Leafy](https://github.com/HoneyLuka/uBlacklist/tree/safari-port/safari-project))
 - [GitHub](https://github.com/iorate/ublacklist)
 

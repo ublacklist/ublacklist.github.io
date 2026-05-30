@@ -5,7 +5,12 @@ sidebar_position: 1
 
 ## Install
 
-You can install uBlacklist from [Chrome Web Store](https://chrome.google.com/webstore/detail/ublacklist/pncfbmialoiaghdehhbnbhkkgmjanfhe/), [Firefox Add-ons](https://addons.mozilla.org/en/firefox/addon/ublacklist/) or [App Store](https://apps.apple.com/us/app/ublacklist-for-safari/id1547912640).
+You can install uBlacklist from the following stores:
+
+- [Chrome Web Store](https://chrome.google.com/webstore/detail/ublacklist/pncfbmialoiaghdehhbnbhkkgmjanfhe/)
+- [Firefox Add-ons](https://addons.mozilla.org/en/firefox/addon/ublacklist/)
+- [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/ublacklist/feedneoaheedjlhokipclogaoejelcbb)
+- [App Store](https://apps.apple.com/us/app/ublacklist-for-safari/id1547912640)
 
 :::note
 
