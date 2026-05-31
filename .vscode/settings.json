@@ -8,5 +8,6 @@
     "source.fixAll.biome": "explicit",
     "source.organizeImports.biome": "explicit"
   },
-  "js/ts.experimental.useTsgo": true
+  "js/ts.experimental.useTsgo": true,
+  "typescript.native-preview.tsdk": "./node_modules/@typescript/native-preview"
 }
