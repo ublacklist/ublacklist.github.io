@@ -87,8 +87,10 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
 
   future: {
-    experimental_faster: true,
     v4: true,
+  },
+  markdown: {
+    format: "detect",
   },
 };
 
