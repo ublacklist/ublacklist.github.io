@@ -7,7 +7,7 @@ allowBuilds:
 
 blockExoticSubdeps: true
 
-minimumReleaseAge: 1440 # 1 day
+minimumReleaseAge: 4320 # 3 days
 
 overrides:
   serialize-javascript@<=7.0.2: ^7.0.3
