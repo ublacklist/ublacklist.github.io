@@ -9,6 +9,10 @@ blockExoticSubdeps: true
 
 minimumReleaseAge: 4320 # 3 days
 
+minimumReleaseAgeExclude:
+  # Renovate security update: js-yaml@4.2.0
+  - js-yaml@4.2.0
+
 overrides:
   serialize-javascript@<=7.0.2: ^7.0.3
   serialize-javascript@>=5.0.0 <7.0.5: ^7.0.5
@@ -19,6 +23,3 @@ trustPolicy: no-downgrade
 trustPolicyExclude:
   - detect-port@1.6.1
   - semver@6.3.1
-minimumReleaseAgeExclude:
-  # Renovate security update: js-yaml@4.2.0
-  - js-yaml@4.2.0
