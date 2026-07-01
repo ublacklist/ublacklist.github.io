@@ -43,11 +43,11 @@ jobs:
       - name: pnpm biome ci
         run: pnpm biome ci --reporter=github
 
-      - name: pnpm prettier
-        run: pnpm prettier --check '**/*.{md,mdx,yaml,yml}'
+      - name: pnpm check:prettier
+        run: pnpm check:prettier
 
-      - name: pnpm tsgo
-        run: pnpm tsgo
+      - name: pnpm check:typescript
+        run: pnpm check:typescript
 
       - name: pnpm build
         run: pnpm build --locale=en
