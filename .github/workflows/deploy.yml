@@ -12,9 +12,14 @@ defaults:
   run:
     shell: bash
 
+concurrency:
+  group: ${{ github.workflow }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    timeout-minutes: 30
 
     steps:
       - name: Checkout
@@ -62,6 +67,8 @@ jobs:
     needs: build
 
     runs-on: ubuntu-latest
+
+    timeout-minutes: 30
 
     permissions:
       pages: write
