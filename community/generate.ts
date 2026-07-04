@@ -1,9 +1,9 @@
 import { readFile, writeFile } from "node:fs/promises";
-import yaml from "js-yaml";
+import { load } from "js-yaml";
 import { resourceListSchema } from "./types.ts";
 
 function toModuleString(data: string): string {
-  const resourceList = resourceListSchema.parse(yaml.load(data));
+  const resourceList = resourceListSchema.parse(load(data));
   return `// This file is auto-generated. Do not edit directly.
 
 import type { ResourceList } from "./types.ts";
