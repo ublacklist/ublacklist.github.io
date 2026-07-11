@@ -13,3 +13,9 @@ To list your ruleset on the [Community Rulesets](https://ublacklist.github.io/ru
 ### Translation
 
 Please use [Crowdin](https://crowdin.com/project/ublacklist) for all translations.
+
+To add the website in a new language:
+
+1. If your language is not listed on Crowdin, request it there using the "Request New Language" button.
+2. Translate at least 60% of the website strings on Crowdin.
+3. Open a [Website](https://github.com/iorate/ublacklist/discussions/new?category=website) discussion to request that the new language be enabled on the website.
