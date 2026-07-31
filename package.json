@@ -43,7 +43,7 @@
     "react-dom": "19.2.8"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.5",
+    "@biomejs/biome": "2.5.6",
     "@docusaurus/module-type-aliases": "3.10.2",
     "@docusaurus/theme-classic": "3.10.2",
     "@docusaurus/types": "3.10.2",
@@ -55,7 +55,7 @@
     "typescript": "7.0.2",
     "zod": "4.4.3"
   },
-  "packageManager": "pnpm@11.15.1",
+  "packageManager": "pnpm@11.17.0",
   "devEngines": {
     "runtime": {
       "name": "node",
