@@ -9,16 +9,38 @@
     "postinstall": "pnpm generate",
     "build": "docusaurus build",
     "check": "pnpm run /^check:/",
-    "check:biome": "biome check",
-    "check:prettier": "prettier --check **/*.{md,mdx,yaml,yml}",
-    "check:typescript": "tsc",
+    "check:lint": "oxlint",
+    "check:format": "oxfmt --check",
     "clear": "docusaurus clear",
     "fix": "pnpm run /^fix:/",
-    "fix:biome": "biome check --write",
-    "fix:prettier": "prettier --write **/*.{md,mdx,yaml,yml}",
+    "fix:lint": "oxlint --fix",
+    "fix:format": "oxfmt",
     "generate": "node community/generate.ts",
     "serve": "docusaurus serve",
     "start": "docusaurus start"
+  },
+  "dependencies": {
+    "@docusaurus/core": "3.10.2",
+    "@docusaurus/faster": "3.10.2",
+    "@docusaurus/preset-classic": "3.10.2",
+    "@mdx-js/react": "3.1.1",
+    "clsx": "2.1.1",
+    "prism-react-renderer": "2.4.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "3.10.2",
+    "@docusaurus/theme-classic": "3.10.2",
+    "@docusaurus/types": "3.10.2",
+    "@types/node": "24.13.3",
+    "@types/react": "19.2.18",
+    "js-yaml": "5.2.3",
+    "lefthook": "2.1.10",
+    "oxfmt": "0.62.0",
+    "oxlint": "1.77.0",
+    "oxlint-tsgolint": "7.0.2001",
+    "zod": "4.4.3"
   },
   "browserslist": {
     "development": [
@@ -32,35 +54,12 @@
       "not op_mini all"
     ]
   },
-  "dependencies": {
-    "@docusaurus/core": "3.10.2",
-    "@docusaurus/faster": "3.10.2",
-    "@docusaurus/preset-classic": "3.10.2",
-    "@mdx-js/react": "3.1.1",
-    "clsx": "2.1.1",
-    "prism-react-renderer": "2.4.1",
-    "react": "19.2.8",
-    "react-dom": "19.2.8"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "2.5.7",
-    "@docusaurus/module-type-aliases": "3.10.2",
-    "@docusaurus/theme-classic": "3.10.2",
-    "@docusaurus/types": "3.10.2",
-    "@types/node": "24.13.3",
-    "@types/react": "19.2.18",
-    "js-yaml": "5.2.3",
-    "lefthook": "2.1.10",
-    "prettier": "3.9.6",
-    "typescript": "7.0.2",
-    "zod": "4.4.3"
-  },
-  "packageManager": "pnpm@11.20.0",
   "devEngines": {
     "runtime": {
       "name": "node",
       "version": "24.18.0",
       "onFail": "download"
     }
-  }
+  },
+  "packageManager": "pnpm@11.20.0"
 }

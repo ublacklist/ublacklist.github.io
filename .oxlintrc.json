@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "ignorePatterns": ["*.generated.*"],
+  "plugins": [
+    "eslint",
+    "typescript",
+    "unicorn",
+    "react",
+    "oxc",
+    "import",
+    "jsx-a11y"
+  ],
+  "options": {
+    "denyWarnings": true,
+    "typeAware": true,
+    "typeCheck": true
+  },
+  "rules": {
+    "curly": "error",
+    "import/extensions": ["error", "ignorePackages"]
+  }
+}

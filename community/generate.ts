@@ -1,5 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
+
 import { load } from "js-yaml";
+
 import { resourceListSchema } from "./types.ts";
 
 function toModuleString(data: string): string {

@@ -1,14 +1,9 @@
-# Dependency directories
-node_modules
+# Build outputs
+.docusaurus/
+build/
 
-# Docusaurus cache and generated files
-.docusaurus
-build
+# Dependencies
+node_modules/
 
 # Generated files
-*.generated.ts
-
-# Claude Code
-.claude/settings.local.json
-.claude/worktrees/
-CLAUDE.local.md
+*.generated.*

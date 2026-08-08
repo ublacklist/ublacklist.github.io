@@ -12,7 +12,7 @@ Docusaurus-based website for the uBlacklist browser extension.
 # Install dependencies (pnpm >= 10 required)
 pnpm install
 
-# Run all checks (biome, prettier, typescript)
+# Run all checks (oxlint and oxfmt)
 pnpm check
 
 # Fix linting/formatting issues
