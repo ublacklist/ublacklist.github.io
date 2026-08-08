@@ -1,6 +1,7 @@
 import Link from "@docusaurus/Link";
 import { translate } from "@docusaurus/Translate";
 import React from "react";
+
 import type { ResourceList } from "../../community/types.ts";
 
 const subscribeEmoji = "➕";
@@ -19,12 +20,10 @@ export function Resources(props: {
 }) {
   return Object.entries(props.resources).map(
     ([category, resources], categoryIndex) => (
-      // biome-ignore lint/suspicious/noArrayIndexKey: The list is static
       <React.Fragment key={categoryIndex}>
         <h2 id={category}>{translateCategory(category)}</h2>
         <ul>
           {resources.map((resource, index) => (
-            // biome-ignore lint/suspicious/noArrayIndexKey: The list is static
             <li key={index}>
               <Link to={resource.homepage}>{resource.name}</Link>
               {resource.author && (
@@ -56,7 +55,6 @@ export function Resources(props: {
               {resource.subitems && resource.subitems.length > 0 && (
                 <ul>
                   {resource.subitems.map((subitem, subIndex) => (
-                    // biome-ignore lint/suspicious/noArrayIndexKey: The list is static
                     <li key={subIndex}>
                       {subitem.name}
                       {subitem.description && (
