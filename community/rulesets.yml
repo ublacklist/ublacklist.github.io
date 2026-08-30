@@ -191,7 +191,7 @@ chinese:
     author:
       name: bcaso
       url: https://github.com/bcaso
-    subscription: https://raw.githubusercontent.com/bcaso/Computer-Science-Whitelist/main/whitelists/whitelist.txt
+    subscription: https://raw.githubusercontent.com/bcaso/Computer-Science-Whitelist/refs/heads/main/whitelists/whitelists_combined.txt
 
 italian:
   - name: Siti che subordinano l'accesso ai loro contenuti al pagamento di un abbonamento o all'accettazione di cookie
