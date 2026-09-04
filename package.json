@@ -35,12 +35,12 @@
     "@docusaurus/types": "3.10.2",
     "@types/node": "24.13.3",
     "@types/react": "19.2.18",
-    "js-yaml": "5.3.0",
-    "lefthook": "2.1.10",
-    "oxfmt": "0.65.0",
-    "oxlint": "1.80.0",
+    "js-yaml": "5.4.1",
+    "lefthook": "2.1.12",
+    "oxfmt": "0.66.0",
+    "oxlint": "1.81.0",
     "oxlint-tsgolint": "7.0.2001",
-    "zod": "4.4.3"
+    "zod": "4.5.4"
   },
   "browserslist": {
     "development": [
@@ -61,5 +61,5 @@
       "onFail": "download"
     }
   },
-  "packageManager": "pnpm@11.24.0"
+  "packageManager": "pnpm@11.25.0"
 }
