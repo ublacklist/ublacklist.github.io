@@ -43,6 +43,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-rspack-
 
+      - name: Check generated files
+        run: |
+          pnpm generate
+          git diff --exit-code
+
       - name: pnpm check
         run: pnpm check
 

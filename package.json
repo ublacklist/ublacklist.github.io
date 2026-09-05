@@ -15,7 +15,9 @@
     "fix": "pnpm run /^fix:/",
     "fix:lint": "oxlint --fix",
     "fix:format": "oxfmt",
-    "generate": "node community/generate.ts",
+    "generate": "pnpm run /^generate:/",
+    "generate:community": "node community/generate.ts",
+    "generate:crowdin-config": "node scripts/generate-crowdin-config.ts",
     "serve": "docusaurus serve",
     "start": "docusaurus start"
   },

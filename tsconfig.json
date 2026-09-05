@@ -1,5 +1,5 @@
 {
-  "include": ["src", "community", "docusaurus.config.ts"],
+  "include": ["src", "community", "scripts", "docusaurus.config.ts"],
 
   "compilerOptions": {
     // Type Checking

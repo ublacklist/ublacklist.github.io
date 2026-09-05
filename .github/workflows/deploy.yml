@@ -41,15 +41,16 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-rspack-
 
+      - name: Get crowdin download args
+        id: crowdin-download-args
+        run: echo "args=$(node scripts/crowdin-download-args.ts)" >> "$GITHUB_OUTPUT"
+
       - name: Run crowdin
         uses: crowdin/github-action@71fdb8814261dd703be4ca7c6450d21b1868da4b # v3.0.1
         with:
           download_translations: true
           export_only_approved: true
-          download_translations_args: --ignore-match
-            --language=de
-            --language=ja
-            --language=pt-BR
+          download_translations_args: --ignore-match ${{ steps.crowdin-download-args.outputs.args }}
           push_translations: false
         env:
           CROWDIN_PROJECT_ID: ${{ vars.CROWDIN_PROJECT_ID }}

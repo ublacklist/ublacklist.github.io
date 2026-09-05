@@ -2,6 +2,8 @@ import type * as Preset from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
 import { themes as prismThemes } from "prism-react-renderer";
 
+import { languages } from "./scripts/languages.ts";
+
 const config: Config = {
   title: "uBlacklist",
   tagline:
@@ -20,7 +22,7 @@ const config: Config = {
 
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "de", "ja", "pt-BR"],
+    locales: ["en", ...languages.map(({ docusaurus }) => docusaurus)],
   },
 
   presets: [
