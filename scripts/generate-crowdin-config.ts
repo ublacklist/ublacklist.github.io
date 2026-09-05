@@ -6,7 +6,7 @@ import { languages } from "./languages.ts";
 
 const languagesMapping = {
   two_letters_code: Object.fromEntries(
-    languages.map(({ crowdin, docusaurus }) => [crowdin, docusaurus]),
+    languages.map(({ crowdin, tag }) => [crowdin, tag]),
   ),
 };
 
