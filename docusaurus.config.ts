@@ -22,7 +22,7 @@ const config: Config = {
 
   i18n: {
     defaultLocale: "en",
-    locales: ["en", ...languages.map(({ docusaurus }) => docusaurus)],
+    locales: ["en", ...languages.map(({ tag }) => tag)],
   },
 
   presets: [

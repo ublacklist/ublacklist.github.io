@@ -1,11 +1,10 @@
 # Supported translations of the website. English is the source and is not listed here.
 # After editing, run `pnpm generate`.
 #
-# docusaurus: locale in docusaurus.config.ts (appears in URLs as /<docusaurus>/)
-# crowdin:    language code on Crowdin
-- docusaurus: de
-  crowdin: de
-- docusaurus: ja
-  crowdin: ja
-- docusaurus: pt-BR
-  crowdin: pt-BR
+# Each key is a language tag as in languages.yml of iorate/ublacklist, used as
+# the Docusaurus locale (it appears in URLs as /<tag>/).
+#
+# crowdin: language code on Crowdin (default: the tag).
+de:
+ja:
+pt-BR:
