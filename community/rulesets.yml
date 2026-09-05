@@ -191,7 +191,13 @@ chinese:
     author:
       name: bcaso
       url: https://github.com/bcaso
-    subscription: https://raw.githubusercontent.com/bcaso/Computer-Science-Whitelist/main/whitelists/whitelist.txt
+    subitems:
+      - name: whitelist.txt
+        description: 为保证白名单生效，先订阅 whitelist.txt
+        subscription: https://raw.githubusercontent.com/bcaso/Computer-Science-Whitelist/main/whitelists/whitelist.txt
+      - name: whitelists_combined.txt
+        description: 不分类，直接订阅总列表
+        subscription: https://raw.githubusercontent.com/bcaso/Computer-Science-Whitelist/main/whitelists/whitelists_combined.txt
 
 italian:
   - name: Siti che subordinano l'accesso ai loro contenuti al pagamento di un abbonamento o all'accettazione di cookie
