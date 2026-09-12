@@ -1,13 +1,13 @@
-{{- $docs := strings.TrimSuffix ".html" (site.GetPage "/docs").RelPermalink -}}
+{{- $docs := site.GetPage "/docs" -}}
 <!doctype html>
 <html lang="{{ site.Language.Lang }}">
   <head>
     <meta charset="utf-8">
     <title>{{ site.Title }}</title>
-    <link rel="canonical" href="{{ $docs | absURL }}">
-    <meta http-equiv="refresh" content="0; url={{ $docs }}">
+    <link rel="canonical" href="{{ $docs.Permalink }}">
+    <meta http-equiv="refresh" content="0; url={{ $docs.RelPermalink }}">
   </head>
   <body>
-    <a href="{{ $docs }}">{{ $docs }}</a>
+    <a href="{{ $docs.RelPermalink }}">{{ $docs.Title }}</a>
   </body>
 </html>

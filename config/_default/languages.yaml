@@ -7,11 +7,20 @@ de:
   locale: de
   label: Deutsch
   weight: 2
+  params:
+    editURL:
+      enable: false
 ja:
   locale: ja
   label: 日本語
   weight: 3
+  params:
+    editURL:
+      enable: false
 pt-BR:
   locale: pt-BR
   label: Português (Brasil)
   weight: 4
+  params:
+    editURL:
+      enable: false

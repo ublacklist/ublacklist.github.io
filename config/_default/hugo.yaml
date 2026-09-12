@@ -1,6 +1,17 @@
 baseURL: https://ublacklist.github.io/
 title: uBlacklist
-theme: hextra
+module:
+  imports:
+    - path: hextra
+      mounts:
+        - source: layouts
+          target: layouts
+        - source: assets
+          target: assets
+        - source: i18n
+          target: i18n
+        - source: data
+          target: data
 
 uglyURLs: true
 disableDefaultLanguageRedirect: true
@@ -21,13 +32,13 @@ markup:
 menu:
   main:
     - identifier: docs
-      pageRef: /docs
+      pageRef: docs
       weight: 1
     - identifier: communityRulesets
-      pageRef: /rulesets
+      pageRef: rulesets
       weight: 2
     - identifier: privacyPolicy
-      pageRef: /privacy-policy
+      pageRef: privacy-policy
       weight: 3
     - name: GitHub
       url: https://github.com/iorate/ublacklist

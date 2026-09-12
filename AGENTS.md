@@ -8,7 +8,7 @@ Hugo-based website (Hextra theme) for the uBlacklist browser extension.
 
 ## Development Commands
 
-Requirements: Hugo (extended) >= 0.146, `yq`, and the Hextra theme submodule (`git submodule update --init`).
+Requirements: Hugo (extended) >= 0.158, `yq`, and the Hextra theme submodule (`git submodule update --init`).
 
 ```shell
 # Start local dev server (links carry ".html" here; the production build strips them)

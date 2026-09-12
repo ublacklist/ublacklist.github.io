@@ -4,7 +4,18 @@
     "github>ublacklist/.github:renovate-config",
     ":pinAllExceptPeerDependencies"
   ],
+  "enabledManagers": ["github-actions", "git-submodules", "custom.regex"],
   "git-submodules": {
     "enabled": true
-  }
+  },
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/^\\.github/workflows/.+\\.ya?ml$/"],
+      "matchStrings": ["hugo-version: \"(?<currentValue>[^\"]+)\""],
+      "depNameTemplate": "gohugoio/hugo",
+      "datasourceTemplate": "github-releases",
+      "extractVersionTemplate": "^v(?<version>.+)$"
+    }
+  ]
 }
