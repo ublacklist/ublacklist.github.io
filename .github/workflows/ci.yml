@@ -41,6 +41,9 @@ jobs:
           scripts/generate.sh
           git diff --exit-code
 
+      - name: Validate rulesets
+        run: pipx run check-jsonschema==0.38.0 --schemafile rulesets.schema.json data/rulesets.yml
+
       - name: Build
         run: scripts/build.sh
 

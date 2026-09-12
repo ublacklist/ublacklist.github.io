@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "category": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]*$"
+      },
+      "resources": {
+        "type": "array",
+        "items": { "$ref": "#/$defs/resource" }
+      }
+    },
+    "required": ["category", "resources"],
+    "additionalProperties": false
+  },
+  "$defs": {
+    "url": {
+      "type": "string",
+      "pattern": "^https?://"
+    },
+    "resource": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "homepage": { "$ref": "#/$defs/url" },
+        "author": {
+          "oneOf": [
+            { "type": "string" },
+            {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "url": { "$ref": "#/$defs/url" }
+              },
+              "required": ["name"],
+              "additionalProperties": false
+            }
+          ]
+        },
+        "subscription": { "$ref": "#/$defs/url" },
+        "subitems": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/subitem" }
+        }
+      },
+      "required": ["name", "homepage"],
+      "additionalProperties": false
+    },
+    "subitem": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "subscription": { "$ref": "#/$defs/url" }
+      },
+      "required": ["name"],
+      "additionalProperties": false
+    }
+  }
+}

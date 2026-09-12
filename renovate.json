@@ -22,6 +22,13 @@
       "depNameTemplate": "gohugoio/hugo",
       "datasourceTemplate": "github-releases",
       "extractVersionTemplate": "^v(?<version>.+)$"
+    },
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/^\\.github/workflows/.+\\.ya?ml$/"],
+      "matchStrings": ["pipx run check-jsonschema==(?<currentValue>[^ ]+)"],
+      "depNameTemplate": "check-jsonschema",
+      "datasourceTemplate": "pypi"
     }
   ]
 }
