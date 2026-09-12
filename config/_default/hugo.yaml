@@ -55,7 +55,8 @@ params:
     default: system
     displayToggle: true
   footer:
-    enable: false
+    enable: true
+    displayCopyright: true
   search:
     enable: false
   editURL:
