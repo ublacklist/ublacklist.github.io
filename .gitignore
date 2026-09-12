@@ -1,5 +1,8 @@
+# Hugo build output
 public/
 .hugo_build.lock
+
+# Translations are downloaded from Crowdin at deploy time; only English is tracked
 content/*
 !content/en/
 i18n/*
