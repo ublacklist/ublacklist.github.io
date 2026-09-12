@@ -1,6 +1,12 @@
 # AGENTS.md
 
-Hugo site (Hextra theme as a git submodule) for the uBlacklist browser extension. Build with `scripts/build.sh` on Linux (GNU sed, bash >= 4, Hugo extended, `yq`).
+Hugo site (Hextra theme as a git submodule) for the uBlacklist browser extension. Requires Linux (GNU sed, bash >= 4), Hugo extended, and `yq`.
+
+```shell
+hugo server         # local preview (dev server needs ".html" in typed URLs)
+scripts/build.sh    # production build into public/
+scripts/generate.sh # regenerate the files derived from languages.yml
+```
 
 ## Rules
 
