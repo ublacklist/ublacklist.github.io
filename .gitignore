@@ -6,4 +6,4 @@ public/
 content/*
 !content/en/
 i18n/*
-!i18n/en.json
+!i18n/en.yaml

@@ -1,0 +1,42 @@
+docs: Docs # Navigation bar item for the documentation pages
+communityRulesets: Community Rulesets # Navigation bar item for the Community Rulesets page
+privacyPolicy: Privacy Policy # Navigation bar item for the Privacy Policy page
+
+callbackSuccessTitle: Authentication Succeeded # Heading of the authentication callback page when it succeeds
+callbackSuccessCopyCode: Please copy the authorization code below and paste it in the options page. # Instruction on the authentication callback page, followed by the authorization code
+callbackFailureTitle: Authentication Failed # Heading of the authentication callback page when it fails
+callbackFailureCheckError: Please check the error message below. # Instruction on the authentication callback page, followed by the error details
+
+category-ai-generated-content: AI generated content # Section heading on the Community Rulesets page
+category-copycat-sites: Copycat sites # Section heading on the Community Rulesets page
+category-gaming: Gaming # Section heading on the Community Rulesets page
+category-media-sites: Media sites # Section heading on the Community Rulesets page
+category-spam: Spam # Section heading on the Community Rulesets page
+category-specific-sites: Specific sites # Section heading on the Community Rulesets page
+category-chinese: Chinese # Section heading on the Community Rulesets page for rulesets targeting Chinese sites
+category-italian: Italian # Section heading on the Community Rulesets page for rulesets targeting Italian sites
+category-japanese: Japanese # Section heading on the Community Rulesets page for rulesets targeting Japanese sites
+category-portuguese: Portuguese # Section heading on the Community Rulesets page for rulesets targeting Portuguese sites
+category-resources: Resources # Section heading on the Community Rulesets page
+
+note: Note # Title of a "note" callout box in the documentation
+warning: Warning # Title of a "warning" callout box in the documentation
+
+menu: Menu # Accessibility label of the hamburger menu button on small screens
+skipToContent: Skip to content # Link for keyboard users to jump past the navigation bar
+permalinkLabel: Permalink for this section # Accessibility label of the anchor link next to each heading
+toggleSection: Toggle section # Accessibility label of the expand/collapse button of a sidebar section
+tableOfContents: Table of contents # Accessibility label of the table of contents sidebar
+onThisPage: On this page # Heading of the table of contents sidebar
+backToTop: Scroll to top # Link at the bottom of the table of contents
+editThisPage: Edit this page # Link below the table of contents; leads to GitHub or Crowdin
+changeLanguage: Change language # Tooltip and accessibility label of the language switcher
+changeTheme: Change theme # Tooltip and accessibility label of the light/dark theme switcher
+light: Light # Option in the theme switcher
+dark: Dark # Option in the theme switcher
+system: System # Option in the theme switcher (follow the operating system setting)
+copyCode: Copy code # Tooltip and accessibility label of the copy button on code blocks
+copied: Copied! # Label of the copy button right after the code was copied
+
+poweredBy: Powered by Hextra # Footer credit; Hextra is the name of the site theme
+copyright: Copyright © 2021 iorate. # Copyright notice in the footer
