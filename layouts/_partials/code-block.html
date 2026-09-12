@@ -1,0 +1,4 @@
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+  <div><pre><code{{ range $name, $value := . }} {{ printf "%s=%q" $name $value | safeHTMLAttr }}{{ end }}></code></pre></div>
+  {{ partialCached "components/codeblock-copy-button" (dict "filename" "") "" }}
+</div>

@@ -1,9 +1,9 @@
-# Build outputs
-.docusaurus/
-build/
+# Hugo build output
+public/
+.hugo_build.lock
 
-# Dependencies
-node_modules/
-
-# Generated files
-*.generated.*
+# Translations are downloaded from Crowdin at deploy time; only English is tracked
+content/*
+!content/en/
+i18n/*
+!i18n/en.json

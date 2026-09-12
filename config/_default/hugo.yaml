@@ -1,0 +1,68 @@
+baseURL: https://ublacklist.github.io/
+title: uBlacklist
+module:
+  imports:
+    - path: hextra
+      mounts:
+        - source: layouts
+          target: layouts
+        - source: assets
+          target: assets
+        - source: data
+          target: data
+
+uglyURLs: true
+disableDefaultLanguageRedirect: true
+disableKinds: [taxonomy, term, rss]
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+
+menu:
+  main:
+    - identifier: docs
+      pageRef: docs
+      weight: 1
+    - identifier: communityRulesets
+      pageRef: rulesets
+      weight: 2
+    - identifier: privacyPolicy
+      pageRef: privacy-policy
+      weight: 3
+    - name: GitHub
+      url: https://github.com/iorate/ublacklist
+      weight: 4
+      params:
+        icon: github
+
+params:
+  description: Block the sites you specify from appearing in Google search results
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: img/icon.svg
+  theme:
+    default: system
+    displayToggle: true
+  footer:
+    enable: true
+    displayCopyright: true
+  search:
+    enable: false
+  editURL:
+    enable: true
+    base: https://github.com/ublacklist/ublacklist.github.io/edit/main/content
+  displayUpdatedDate: false
+  page:
+    contextMenu:
+      enable: false

@@ -1,7 +1,34 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "github>ublacklist/.github:renovate-config",
-    ":pinAllExceptPeerDependencies"
+  "extends": ["github>ublacklist/.github:renovate-config"],
+  "enabledManagers": ["github-actions", "git-submodules", "custom.regex"],
+  "git-submodules": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "matchManagers": ["git-submodules"],
+      "matchCurrentVersion": "<1",
+      "matchUpdateTypes": ["minor"],
+      "groupName": null,
+      "automerge": false
+    }
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/^\\.github/workflows/.+\\.ya?ml$/"],
+      "matchStrings": ["hugo-version: \"(?<currentValue>[^\"]+)\""],
+      "depNameTemplate": "gohugoio/hugo",
+      "datasourceTemplate": "github-releases",
+      "extractVersionTemplate": "^v(?<version>.+)$"
+    },
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/^\\.github/workflows/.+\\.ya?ml$/"],
+      "matchStrings": ["pipx run check-jsonschema==(?<currentValue>[^ ]+)"],
+      "depNameTemplate": "check-jsonschema",
+      "datasourceTemplate": "pypi"
+    }
   ]
 }

@@ -1,0 +1,24 @@
+{{- range hugo.Data.rulesets }}
+{{ printf "## %s {#%s}" (i18n (printf "category-%s" .category)) .category }}
+{{ range .resources }}
+{{- $author := "" }}
+{{- with .author }}
+  {{- if reflect.IsMap . }}
+    {{- $author = cond (isset . "url") (printf "[%s](%s)" (partial "markdown-escape" .name) .url) (partial "markdown-escape" .name) }}
+  {{- else }}
+    {{- $author = partial "markdown-escape" . }}
+  {{- end }}
+{{- end }}
+{{- $line := printf "[%s](%s)" (partial "markdown-escape" .name) .homepage }}
+{{- with $author }}{{ $line = printf "%s by %s" $line . }}{{ end }}
+{{- with .description }}{{ $line = printf "%s - %s" $line (partial "markdown-escape" .) }}{{ end }}
+{{- with .subscription }}{{ $line = printf "%s [➕](%s)" $line (partial "subscription-link" .) }}{{ end }}
+{{ printf "- %s" $line }}
+{{- range .subitems }}
+{{- $sub := partial "markdown-escape" .name }}
+{{- with .description }}{{ $sub = printf "%s - %s" $sub (partial "markdown-escape" .) }}{{ end }}
+{{- with .subscription }}{{ $sub = printf "%s [➕](%s)" $sub (partial "subscription-link" .) }}{{ end }}
+{{ printf "  - %s" $sub }}
+{{- end }}
+{{- end }}
+{{ end }}

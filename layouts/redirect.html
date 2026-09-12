@@ -1,0 +1,13 @@
+{{- $target := site.GetPage "/docs/introduction" -}}
+<!doctype html>
+<html lang="{{ site.Language.Lang }}">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ .Title }}</title>
+    <link rel="canonical" href="{{ $target.Permalink }}">
+    <meta http-equiv="refresh" content="0; url={{ $target.RelPermalink }}">
+  </head>
+  <body>
+    <a href="{{ $target.RelPermalink }}">{{ $target.Title }}</a>
+  </body>
+</html>

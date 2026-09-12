@@ -28,31 +28,24 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
+          submodules: true
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@2752ce1d29631191ea3f27c23495fa06139a5b78 # v3.2.1
         with:
-          run_install: true
-          cache: true
-
-      - name: Restore rspack cache
-        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
-        with:
-          path: node_modules/.cache/rspack
-          key: ${{ runner.os }}-rspack-${{ hashFiles('pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-rspack-
+          hugo-version: "0.166.0"
+          extended: true
 
       - name: Check generated files
         run: |
-          pnpm generate
+          scripts/generate.sh
           git diff --exit-code
 
-      - name: pnpm check
-        run: pnpm check
+      - name: Validate rulesets
+        run: pipx run check-jsonschema==0.38.0 --schemafile rulesets.schema.json data/rulesets.yml
 
-      - name: pnpm build
-        run: pnpm build --locale=en
+      - name: Build
+        run: scripts/build.sh
 
   actionlint:
     runs-on: ubuntu-latest

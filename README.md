@@ -2,6 +2,18 @@
 
 This repository hosts the website of [uBlacklist](https://github.com/iorate/ublacklist).
 
+## Development
+
+The site is built with [Hugo](https://gohugo.io/) (extended) and the [Hextra](https://imfing.github.io/hextra/) theme, which is included as a git submodule. Clone with `--recurse-submodules` or run `git submodule update --init`.
+
+The scripts require bash >= 4, GNU sed (`gsed` from Homebrew on macOS), and [yq](https://github.com/mikefarah/yq).
+
+```shell
+hugo server         # local preview (the dev server needs ".html" in typed URLs)
+scripts/build.sh    # production build into public/
+scripts/generate.sh # regenerate the files derived from languages.yml
+```
+
 ## Contribution
 
 For bug reports, questions, or suggestions, please visit [uBlacklist Discussions](https://github.com/iorate/ublacklist/discussions). See the [contribution guidelines](https://github.com/iorate/ublacklist/blob/master/CONTRIBUTING.md) for details.

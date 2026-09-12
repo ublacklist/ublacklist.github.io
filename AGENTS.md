@@ -1,31 +1,14 @@
 # AGENTS.md
 
-This file provides guidance to AI coding agents when working with code in this repository.
-
-## Project Overview
-
-Docusaurus-based website for the uBlacklist browser extension.
-
-## Development Commands
+Hugo site (Hextra theme as a git submodule) for the uBlacklist browser extension. Requires bash >= 4, GNU sed (`gsed` from Homebrew on macOS), Hugo extended, and `yq`.
 
 ```shell
-# Install dependencies (pnpm >= 10 required)
-pnpm install
-
-# Run all checks (oxlint and oxfmt)
-pnpm check
-
-# Fix linting/formatting issues
-pnpm fix
-
-# Start local dev server
-pnpm start
+hugo server         # local preview (dev server needs ".html" in typed URLs)
+scripts/build.sh    # production build into public/
+scripts/generate.sh # regenerate the files derived from languages.yml
 ```
 
-## Translations
+## Rules
 
-English is the source of truth; other locales are managed via Crowdin — do not edit them directly. This applies to all Markdown/MDX files as well as `i18n/en/**/*.json`. Edit only the English originals.
-
-## Community Rulesets
-
-`community/rulesets.yml` is the source. Run `pnpm generate` to regenerate `community/rulesets.generated.ts` after edits — do not edit the generated file directly.
+- Every existing URL must keep working. Do not change page URLs or the output layout (`.html` files, `pt-BR` directory).
+- Translations live on Crowdin. Do not add or edit `content/<tag>/` or `i18n/<tag>.json` for languages other than English.
