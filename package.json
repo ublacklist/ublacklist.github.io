@@ -35,7 +35,7 @@
     "@docusaurus/module-type-aliases": "3.10.2",
     "@docusaurus/theme-classic": "3.10.2",
     "@docusaurus/types": "3.10.2",
-    "@types/node": "24.13.3",
+    "@types/node": "26.5.0",
     "@types/react": "19.2.18",
     "js-yaml": "5.4.1",
     "lefthook": "2.1.12",
@@ -59,7 +59,7 @@
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": "24.21.0",
+      "version": "26.8.2",
       "onFail": "download"
     }
   },
