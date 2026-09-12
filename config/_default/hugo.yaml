@@ -4,12 +4,14 @@ theme: hextra
 
 uglyURLs: true
 disableDefaultLanguageRedirect: true
-ignoreLogs: [warning-goldmark-raw-html]
 disableKinds: [taxonomy, term, rss]
 
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
   highlight:
     noClasses: false
   tableOfContents:
