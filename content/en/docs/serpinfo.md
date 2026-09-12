@@ -1,6 +1,6 @@
 ---
 title: SERPINFO
-weight: 3
+weight: 4
 ---
 
 SERPINFO is the mechanism that allows uBlacklist to work on search engines such as Google, Bing, and DuckDuckGo. Each SERPINFO is a YAML file that describes how to locate search results on a specific search engine's results page, so that uBlacklist can block, highlight, or attach buttons to them.

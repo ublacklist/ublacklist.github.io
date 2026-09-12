@@ -1,4 +1,6 @@
 ---
 title: uBlacklist
-layout: home
+layout: redirect
+sitemap:
+  disable: true
 ---

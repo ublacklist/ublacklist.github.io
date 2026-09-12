@@ -23,7 +23,7 @@ scripts/generate.sh
 
 ## URLs
 
-Every existing URL must keep working without redirects. Pages are emitted as `.html` files (`uglyURLs`) so that GitHub Pages serves extensionless paths, and `scripts/postprocess.sh` strips `.html` from generated links and renames the `pt-BR` directory (Hugo lowercases language keys). Do not change page URLs or the output layout.
+Every existing URL must keep working. The only redirects are `/` and `/docs` (and their localized variants), which point to `/docs/introduction` via `layouts/redirect.html`. Pages are emitted as `.html` files (`uglyURLs`) so that GitHub Pages serves extensionless paths, and `scripts/postprocess.sh` strips `.html` from generated links and renames the `pt-BR` directory (Hugo lowercases language keys). Do not change page URLs or the output layout.
 
 ## Translations
 

@@ -1,6 +1,6 @@
 ---
 title: Advanced Features
-weight: 2
+weight: 3
 ---
 
 ## Rules {#rules}
