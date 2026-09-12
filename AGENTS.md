@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Hugo site (Hextra theme as a git submodule) for the uBlacklist browser extension. Requires Linux (GNU sed, bash >= 4), Hugo extended, and `yq`.
+Hugo site (Hextra theme as a git submodule) for the uBlacklist browser extension. Requires bash >= 4, GNU sed (`gsed` from Homebrew on macOS), Hugo extended, and `yq`.
 
 ```shell
 hugo server         # local preview (dev server needs ".html" in typed URLs)
