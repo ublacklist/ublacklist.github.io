@@ -1,13 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "github>ublacklist/.github:renovate-config",
-    ":pinAllExceptPeerDependencies"
-  ],
+  "extends": ["github>ublacklist/.github:renovate-config"],
   "enabledManagers": ["github-actions", "git-submodules", "custom.regex"],
-  "git-submodules": {
-    "enabled": true
-  },
   "customManagers": [
     {
       "customType": "regex",
