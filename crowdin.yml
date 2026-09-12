@@ -11,27 +11,11 @@ files:
         de: de
         ja: ja
         pt-BR: pt-BR
-  - source: /content/en/docs/*.md
-    translation: /content/%two_letters_code%/docs/%original_file_name%
-    dest: /website/docs/%original_file_name%
-    languages_mapping:
-      two_letters_code:
-        de: de
-        ja: ja
-        pt-BR: pt-BR
-  - source: /content/en/*.md
+  - source: /content/en/**/*.md
     ignore:
       - /content/en/_index.md
-    translation: /content/%two_letters_code%/%original_file_name%
-    dest: /website/pages/%original_file_name%
-    languages_mapping:
-      two_letters_code:
-        de: de
-        ja: ja
-        pt-BR: pt-BR
-  - source: /content/en/rulesets/*.md
-    translation: /content/%two_letters_code%/rulesets/%original_file_name%
-    dest: /website/pages/rulesets/%original_file_name%
+    translation: /content/%two_letters_code%/**/%original_file_name%
+    dest: /website/**/%original_file_name%
     languages_mapping:
       two_letters_code:
         de: de
