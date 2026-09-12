@@ -8,8 +8,6 @@ module:
           target: layouts
         - source: assets
           target: assets
-        - source: i18n
-          target: i18n
         - source: data
           target: data
 
