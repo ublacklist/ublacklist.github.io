@@ -13,8 +13,8 @@ fi
 # "/foo.html" or "../foo.html" becomes "/foo" or "../foo", keeping any "?query"
 # or "#fragment".
 find "$public" \( -name '*.html' -o -name '*.xml' \) -type f -print0 | xargs -0 "$sed" -i -E \
-  -e 's#((href|content|src)="|content="0; url=|<loc>)(https://ublacklist\.github\.io)?/([^"<>?\#]*/)?index\.html#\1\3/\4#g' \
-  -e 's#((href|content|src)="|content="0; url=|<loc>|<title>)(https://ublacklist\.github\.io)?([/.][^"<>?\#]*)\.html([" \#?<])#\1\3\4\5#g'
+  -e 's#((href|content|src)="|content="0; url=|location\.replace\("|<loc>)(https://ublacklist\.github\.io)?/([^"<>?\#]*/)?index\.html#\1\3/\4#g' \
+  -e 's#((href|content|src)="|content="0; url=|location\.replace\("|<loc>|<title>)(https://ublacklist\.github\.io)?([/.][^"<>?\#]*)\.html([" \#?<])#\1\3\4\5#g'
 
 # Hugo lowercases language tags in paths (pt-BR -> pt-br). Rename the directory
 # back and rewrite paths starting with it and the <html lang> attribute.
