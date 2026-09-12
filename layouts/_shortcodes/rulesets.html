@@ -1,0 +1,24 @@
+{{- range hugo.Data.rulesets }}
+{{ printf "## %s {#%s}" (i18n (printf "category-%s" .category)) .category }}
+{{ range .resources }}
+{{- $author := "" }}
+{{- with .author }}
+  {{- if reflect.IsMap . }}
+    {{- $author = cond (isset . "url") (printf "[%s](%s)" .name .url) .name }}
+  {{- else }}
+    {{- $author = . }}
+  {{- end }}
+{{- end }}
+{{- $line := printf "[%s](%s)" .name .homepage }}
+{{- with $author }}{{ $line = printf "%s by %s" $line . }}{{ end }}
+{{- with .description }}{{ $line = printf "%s - %s" $line . }}{{ end }}
+{{- with .subscription }}{{ $line = printf "%s [➕](%s)" $line (partial "subscription-link" .) }}{{ end }}
+{{ printf "- %s" $line }}
+{{- range .subitems }}
+{{- $sub := .name }}
+{{- with .description }}{{ $sub = printf "%s - %s" $sub . }}{{ end }}
+{{- with .subscription }}{{ $sub = printf "%s [➕](%s)" $sub (partial "subscription-link" .) }}{{ end }}
+{{ printf "  - %s" $sub }}
+{{- end }}
+{{- end }}
+{{ end }}

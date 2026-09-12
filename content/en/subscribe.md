@@ -1,0 +1,4 @@
+---
+title: Subscribe
+layout: subscribe
+---

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="{{ site.Language.Lang }}">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ .Title }}</title>
+    <meta name="robots" content="noindex">
+    <script>
+      const optionsURL = new URL("chrome-extension://pncfbmialoiaghdehhbnbhkkgmjanfhe/pages/options.html");
+      const query = new URL(window.location.href).searchParams;
+      const name = query.get("name");
+      if (name != null) {
+        optionsURL.searchParams.set("addSubscriptionName", name);
+      }
+      const url = query.get("url");
+      if (url != null) {
+        optionsURL.searchParams.set("addSubscriptionURL", url);
+      }
+      window.location.href = optionsURL.toString();
+    </script>
+  </head>
+  <body></body>
+</html>

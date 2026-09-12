@@ -1,0 +1,6 @@
+<pre><code data-query-param="{{ .Get "param" }}"></code></pre>
+<script>
+  for (const code of document.querySelectorAll("code[data-query-param]")) {
+    code.textContent = new URL(window.location.href).searchParams.get(code.dataset.queryParam) ?? "";
+  }
+</script>

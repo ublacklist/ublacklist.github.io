@@ -1,0 +1,18 @@
+docs: Docs
+communityRulesets: Community Rulesets
+privacyPolicy: Privacy Policy
+callbackSuccessTitle: Authentication Succeeded
+callbackSuccessCopyCode: Please copy the authorization code below and paste it in the options page.
+callbackFailureTitle: Authentication Failed
+callbackFailureCheckError: Please check the error message below.
+category-ai-generated-content: AI generated content
+category-copycat-sites: Copycat sites
+category-gaming: Gaming
+category-media-sites: Media sites
+category-spam: Spam
+category-specific-sites: Specific sites
+category-chinese: Chinese
+category-italian: Italian
+category-japanese: Japanese
+category-portuguese: Portuguese
+category-resources: Resources

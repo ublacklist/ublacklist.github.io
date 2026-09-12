@@ -3,5 +3,8 @@
   "extends": [
     "github>ublacklist/.github:renovate-config",
     ":pinAllExceptPeerDependencies"
-  ]
+  ],
+  "git-submodules": {
+    "enabled": true
+  }
 }

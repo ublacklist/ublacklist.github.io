@@ -26,24 +26,17 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
+          submodules: true
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@2752ce1d29631191ea3f27c23495fa06139a5b78 # v3.2.1
         with:
-          run_install: true
-          cache: true
-
-      - name: Restore rspack cache
-        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
-        with:
-          path: node_modules/.cache/rspack
-          key: ${{ runner.os }}-rspack-${{ hashFiles('pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-rspack-
+          hugo-version: "0.166.0"
+          extended: true
 
       - name: Get crowdin download args
         id: crowdin-download-args
-        run: echo "args=$(node scripts/crowdin-download-args.ts)" >> "$GITHUB_OUTPUT"
+        run: echo "args=$(yq 'to_entries | map("--language=" + (.value.crowdin // .key)) | join(" ")' languages.yml)" >> "$GITHUB_OUTPUT"
 
       - name: Run crowdin
         uses: crowdin/github-action@0d5670f539973aea2f01abce61a8989934df0025 # v3.0.2
@@ -56,13 +49,13 @@ jobs:
           CROWDIN_PROJECT_ID: ${{ vars.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
 
-      - name: pnpm build
-        run: pnpm build
+      - name: Build
+        run: scripts/build.sh
 
       - name: Upload
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
-          path: build/
+          path: public/
           include-hidden-files: true
 
   deploy:

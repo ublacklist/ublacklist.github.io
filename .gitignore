@@ -1,9 +1,6 @@
-# Build outputs
-.docusaurus/
-build/
-
-# Dependencies
-node_modules/
-
-# Generated files
-*.generated.*
+public/
+.hugo_build.lock
+content/*
+!content/en/
+i18n/*
+!i18n/en.yaml
