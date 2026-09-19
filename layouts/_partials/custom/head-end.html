@@ -2,7 +2,7 @@
   {{- range .AllTranslations }}
     <link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink }}" />
   {{- end }}
-  {{- with index (where .AllTranslations "Language.Lang" site.Sites.Default.Language.Lang) 0 }}
+  {{- with index (where .AllTranslations "Language.Lang" hugo.Sites.Default.Language.Lang) 0 }}
     <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
   {{- end }}
 {{- end -}}
