@@ -22,6 +22,9 @@ For bug reports, questions, or suggestions, please visit [uBlacklist Discussions
 
 To list your ruleset on the [Community Rulesets](https://ublacklist.github.io/rulesets) page, please open a [Website: New Ruleset](https://github.com/iorate/ublacklist/discussions/new?category=website-new-ruleset) discussion.
 
+> [!NOTE]
+> Whether and when a ruleset is listed is entirely at the maintainer's discretion, and listed entries may be edited or removed at any time without notice.
+
 ### Translation
 
 Please use [Crowdin](https://crowdin.com/project/ublacklist) for all translations.
