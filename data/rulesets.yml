@@ -131,6 +131,13 @@
         name: popcar2
         url: https://github.com/popcar2
       subscription: https://raw.githubusercontent.com/popcar2/BadWebsiteBlocklist/refs/heads/main/uBlacklist.txt
+    - name: "DGA & Random Subdomain Spam Blocklist"
+      description: Blocks programmatic DGA spam subdomains, scrapers, and copycat networks targeting search results.
+      homepage: https://github.com/william-Johnason/ublacklist-dga-spam
+      author:
+        name: William Johnason
+        url: https://github.com/william-Johnason
+      subscription: https://raw.githubusercontent.com/william-Johnason/ublacklist-dga-spam/refs/heads/main/uBlacklist.txt
 
 - category: specific-sites
   resources:
