@@ -2,18 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>ublacklist/.github:renovate-config"],
   "enabledManagers": ["github-actions", "git-submodules", "custom.regex"],
-  "git-submodules": {
-    "enabled": true
-  },
-  "packageRules": [
-    {
-      "matchManagers": ["git-submodules"],
-      "matchCurrentVersion": "<1",
-      "matchUpdateTypes": ["minor"],
-      "groupName": null,
-      "automerge": false
-    }
-  ],
   "customManagers": [
     {
       "customType": "regex",
