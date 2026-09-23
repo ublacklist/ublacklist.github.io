@@ -10,5 +10,16 @@
       "depNameTemplate": "check-jsonschema",
       "datasourceTemplate": "pypi"
     }
+  ],
+  "packageRules": [
+    {
+      "description": "Treat minor updates of Hugo and Hextra like majors: separate PRs, no automerge",
+      "matchDepNames": ["hugo", "themes/hextra"],
+      "matchCurrentVersion": "<1",
+      "matchUpdateTypes": ["minor"],
+      "groupName": null,
+      "schedule": null,
+      "automerge": false
+    }
   ]
 }
