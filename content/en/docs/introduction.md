@@ -22,5 +22,5 @@ uBlacklist is a browser extension that filters Google Search results, available 
 - Block sites by specific titles using regular expressions
 - Highlight preferred sites in search results
 - Support for Bing, Brave, DuckDuckGo, Ecosia, SearXNG, Startpage.com, Yahoo! JAPAN, and Yandex
-- Synchronize rulesets across devices using Google Drive or Dropbox
+- Synchronize rulesets across devices using Google Drive, Dropbox, OneDrive, WebDAV, or browser sync
 - Subscribe to public rulesets

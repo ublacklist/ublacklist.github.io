@@ -191,17 +191,15 @@ This extension supports Bing, Brave, DuckDuckGo, Ecosia, SearXNG, Startpage.com,
 
 ## Sync {#sync}
 
-You can synchronize rulesets among devices using Google Drive or Dropbox.
+You can synchronize rulesets and other settings across devices using Google Drive, Dropbox, OneDrive, a WebDAV server, or the sync feature built into your browser.
 
-To turn on sync, click the "Turn on sync" button in the options page and select a cloud.
+To turn on sync, click the "Turn on sync" button in the options page and select a sync method.
 
 ![turn on sync](/img/advanced-features/sync-1.png)
 
-Follow the instructions in the dialog to authenticate.
+Follow the instructions in the dialog to authenticate. Once authentication succeeds, your settings will be regularly synchronized.
 
-![authenticate](/img/advanced-features/sync-2.png)
-
-Once authentication succeeds, your ruleset will be regularly synchronized with the selected cloud.
+You can choose what to sync in the "What to sync" list. The "Initial sync" option in the dialog determines which version is kept when the local and remote settings differ at the first sync.
 
 ### Google Drive {#google-drive}
 
@@ -212,6 +210,26 @@ The ruleset is saved in the application data folder on your Google Drive. It is 
 ### Dropbox {#dropbox}
 
 The ruleset is saved in the `/Apps/uBlacklist/` folder on your Dropbox. The folder name may vary depending on your language.
+
+### OneDrive {#onedrive}
+
+You will be required to permit access to `https://login.microsoftonline.com`.
+
+The ruleset is saved in the `/Apps/uBlacklist/` folder on your OneDrive.
+
+OneDrive is not available in Safari.
+
+### WebDAV {#webdav}
+
+Enter the URL of a folder on your WebDAV server, along with the username and password. You will be required to permit access to the URL.
+
+The ruleset is saved in the specified folder, which is created if it does not exist.
+
+### Browser {#browser}
+
+This method uses the sync feature built into your browser, so sync timing depends on the browser. The browser's sync storage has a size limit, so if your ruleset is too large, reduce the number of rules or switch to another sync method.
+
+Browser sync is not available in Safari or Firefox for Android.
 
 ## Subscription {#subscription}
 
