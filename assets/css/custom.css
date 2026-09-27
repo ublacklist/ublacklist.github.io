@@ -3,3 +3,7 @@
   --primary-saturation: 68%;
   --primary-lightness: 45%;
 }
+
+a[href^="https://ublacklist.github.io/rulesets/subscribe?"] {
+  text-decoration: none;
+}
