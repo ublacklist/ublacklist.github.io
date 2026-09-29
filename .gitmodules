@@ -1,4 +1,4 @@
 [submodule "themes/hextra"]
 	path = themes/hextra
 	url = https://github.com/imfing/hextra.git
-	branch = v0.12.3
+	branch = v0.13.0
