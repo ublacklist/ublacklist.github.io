@@ -1,4 +1,5 @@
 ---
 title: Authentication Result
-layout: callback
 ---
+
+{{< callback-result >}}
