@@ -1,0 +1,20 @@
+<div id="callback-success" hidden>
+  <h2>{{ i18n "callbackSuccessTitle" }}</h2>
+  <p>{{ i18n "callbackSuccessCopyCode" }}</p>
+  {{ partial "code-block" (dict "id" "callback-code") }}
+</div>
+<div id="callback-failure" hidden>
+  <h2>{{ i18n "callbackFailureTitle" }}</h2>
+  <p>{{ i18n "callbackFailureCheckError" }}</p>
+  {{ partial "code-block" (dict "id" "callback-error") }}
+</div>
+<script>
+  const params = Object.fromEntries(new URL(window.location.href).searchParams);
+  if (params.code != null) {
+    document.getElementById("callback-code").textContent = params.code;
+    document.getElementById("callback-success").hidden = false;
+  } else {
+    document.getElementById("callback-error").textContent = JSON.stringify(params, null, 2);
+    document.getElementById("callback-failure").hidden = false;
+  }
+</script>
