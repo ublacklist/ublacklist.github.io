@@ -20,6 +20,13 @@
       "groupName": null,
       "schedule": null,
       "automerge": false
+    },
+    {
+      "description": "Look up Hextra on GitHub so minimumReleaseAge can apply",
+      "matchDepNames": ["themes/hextra"],
+      "overrideDatasource": "github-tags",
+      "overridePackageName": "imfing/hextra",
+      "minimumReleaseAge": "3 days"
     }
   ]
 }
