@@ -13,13 +13,10 @@
   ],
   "packageRules": [
     {
-      "description": "Treat minor updates of Hugo and Hextra like majors: separate PRs, no automerge",
-      "matchDepNames": ["hugo", "themes/hextra"],
-      "matchCurrentVersion": "<1",
-      "matchUpdateTypes": ["minor"],
-      "groupName": null,
-      "schedule": null,
-      "automerge": false
+      "description": "hugo-version takes exact SemVer; avoid semver-coerced, which misreads ranges like \"<1\" as versions",
+      "matchDepNames": ["hugo"],
+      "matchManagers": ["github-actions"],
+      "versioning": "semver"
     },
     {
       "description": "Look up Hextra on GitHub so minimumReleaseAge can apply",
@@ -27,6 +24,15 @@
       "overrideDatasource": "github-tags",
       "overridePackageName": "imfing/hextra",
       "minimumReleaseAge": "3 days"
+    },
+    {
+      "description": "Treat minor updates of Hugo and Hextra like majors: separate PRs, no automerge",
+      "matchDepNames": ["hugo", "themes/hextra"],
+      "matchCurrentVersion": "<1",
+      "matchUpdateTypes": ["minor"],
+      "groupName": null,
+      "schedule": null,
+      "automerge": false
     }
   ]
 }
