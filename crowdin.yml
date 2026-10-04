@@ -10,6 +10,7 @@ files:
       two_letters_code:
         de: de
         ja: ja
+        ko: ko
         pt-BR: pt-BR
   - source: /content/en/*.md
     ignore:
@@ -20,6 +21,7 @@ files:
       two_letters_code:
         de: de
         ja: ja
+        ko: ko
         pt-BR: pt-BR
   - source: /content/en/docs/*.md
     translation: /content/%two_letters_code%/docs/%original_file_name%
@@ -28,6 +30,7 @@ files:
       two_letters_code:
         de: de
         ja: ja
+        ko: ko
         pt-BR: pt-BR
   - source: /content/en/rulesets/*.md
     translation: /content/%two_letters_code%/rulesets/%original_file_name%
@@ -36,4 +39,5 @@ files:
       two_letters_code:
         de: de
         ja: ja
+        ko: ko
         pt-BR: pt-BR

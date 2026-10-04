@@ -18,6 +18,12 @@ mounts:
       matrix:
         languages:
           - ja
+  - source: content/ko
+    target: content
+    sites:
+      matrix:
+        languages:
+          - ko
   - source: content/pt-BR
     target: content
     sites:
@@ -31,4 +37,5 @@ mounts:
         languages:
           - de
           - ja
+          - ko
           - pt-br
