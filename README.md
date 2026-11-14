@@ -4,7 +4,7 @@ This repository hosts the website of [uBlacklist](https://github.com/iorate/ubla
 
 ## Development
 
-The site is built with [Hugo](https://gohugo.io/) (extended) and the [Hextra](https://imfing.github.io/hextra/) theme, which is included as a git submodule. Clone with `--recurse-submodules` or run `git submodule update --init`.
+The site is built with [Hugo](https://gohugo.io/) and the [Hextra](https://imfing.github.io/hextra/) theme, which is included as a git submodule. Clone with `--recurse-submodules` or run `git submodule update --init`.
 
 The scripts require bash >= 4, GNU sed (`gsed` from Homebrew on macOS), and [yq](https://github.com/mikefarah/yq).
 
